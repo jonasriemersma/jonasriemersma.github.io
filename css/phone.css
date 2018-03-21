@@ -3,13 +3,17 @@
 visibility: hidden;
 }
 .hi {
-	font-family: "HK Grotesk SemiBold";
+	  font-family: 'HK Grotesk Bold';
+  src:  url('jonasriemersma.github.io/HKGrotesk-Bold.woff') format('woff'),
+
 	font-size: 25px;
 	position: fixed; margin-left: -118px; margin-top: 160px; color: #FFFFFF;
 
 }
 .hi1 {
-	font-family: "HK Grotesk SemiBold";
+	  font-family: 'HK Grotesk Bold';
+  src:  url('jonasriemersma.github.io/HKGrotesk-Bold.woff') format('woff'),
+
 	font-size: 12px;
 	display: none;
 visibility: hidden;
