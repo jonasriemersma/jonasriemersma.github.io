@@ -1,15 +1,12 @@
 .hi {
 	 font-family: 'HK Grotesk Semibold';
-  src:  url('jonasriemersma.github.io/HKGrotesk-Semibold.woff') format('woff'),
-
-
+  src:  url('jonasriemersma.github.io/HKGrotesk-Semibold.woff') format('woff');
 	font-size: 50px;
 	position: absolute; left: 160px; top: -20px; color: #FFFFFF;
 }
 .hi1 {
 	  font-family: 'HK Grotesk Semibold';
-  src:  url('jonasriemersma.github.io/HKGrotesk-Semibold.woff') format('woff'),
-
+  src:  url('jonasriemersma.github.io/HKGrotesk-Semibold.woff') format('woff');
 	font-size: 50px;
 	position: absolute; left: 158px; top: 25px; color: #FFFFFF;
 }
