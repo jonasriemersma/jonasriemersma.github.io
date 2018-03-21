@@ -1,0 +1,23 @@
+#layer3 {
+	display: none;
+visibility: hidden;
+}
+.hi {
+	font-family: "HK Grotesk SemiBold";
+	font-size: 25px;
+	position: fixed; margin-left: -118px; margin-top: 160px; color: #FFFFFF;
+
+}
+.hi1 {
+	font-family: "HK Grotesk SemiBold";
+	font-size: 12px;
+	display: none;
+visibility: hidden;
+}
+
+#layer1 {
+	background-size: auto 100%;
+}
+#imgs {
+	width: 100%;
+}
