@@ -16,5 +16,5 @@ visibility: hidden;
 	background-size: 100% auto;
 }
 #imgs {
-	width: calc(100%  /2);
+	width: 50%;
 }
