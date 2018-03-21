@@ -4,7 +4,6 @@ visibility: hidden;
 }
 .hi {
 	 font-family: 'HK Grotesk Semibold';
-  src:  url('jonasriemersma.github.io/HKGrotesk-Semibold.woff') format('woff'),
 
 
 	font-size: 25px;
@@ -13,7 +12,6 @@ visibility: hidden;
 }
 .hi1 {
 	  font-family: 'HK Grotesk Semibold';
-  src:  url('jonasriemersma.github.io/HKGrotesk-Semibold.woff') format('woff'),
 
 	font-size: 12px;
 	display: none;
