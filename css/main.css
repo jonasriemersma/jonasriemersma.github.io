@@ -12,5 +12,5 @@
 	background-size: 100% auto;
 }
 #imgs {
-	width: calc(100%  /3);
+	width: 33%;
 }
