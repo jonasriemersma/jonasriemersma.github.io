@@ -16,14 +16,14 @@
 }
 @font-face {
 	  font-family: 'HK Grotesk Light';
-	  src:  url("/HKGrotesk-Light.ttf") format: ('truetype'),
+	  src:  url("../HKGrotesk-Light.ttf") format: ('truetype'),
     src: local('?'),
 		  src:  url("HKGrotesk-Light.ttf") format: ('truetype'),
 		  
 	}
 @font-face {
 	font-family: 'HK Grotesk Semibold';
-	  src:  url("/HKGrotesk-Bold.ttf") format: ('truetype'),
+	  src:  url("../HKGrotesk-Bold.ttf") format: ('truetype'),
           src: local('?'),
 	  src:  url("HKGrotesk-Bold.ttf") format: ('truetype'),
 		  
