@@ -1,5 +1,5 @@
 .hi {
-	font-family: 'hk_groteskregular'; 
+	  font-family: font-family: "HK Grotesk Semibold", arial, sans-serif;
 	font-size: 50px;
 	position: absolute; left: 160px; top: -20px; color: #FFFFFF;
 }
@@ -16,16 +16,16 @@
 }
 @font-face {
 	  font-family: 'HK Grotesk Light';
-	  src:  url("../HKGrotesk-Light.ttf") format: ('truetype'),
-    src: local('?'),
-		  src:  url("HKGrotesk-Light.ttf") format: ('truetype'),
+	  src:  url("../HKGrotesk-Light.ttf") format: ('truetype');
+    font-weight: normal;
+    font-style: normal;
 		  
 	}
 @font-face {
 	font-family: 'HK Grotesk Semibold';
-	  src:  url("../HKGrotesk-Bold.ttf") format: ('truetype'),
-          src: local('?'),
-	  src:  url("HKGrotesk-Bold.ttf") format: ('truetype'),
+	  src:  url("../HKGrotesk-Bold.ttf") format: ('truetype');
+              font-weight: normal;
+    font-style: normal;
 		  
 	}
 <link href="//fonts.googleapis.com/css?family=Open+Sans"></link>
