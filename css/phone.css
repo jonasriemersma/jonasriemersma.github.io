@@ -24,12 +24,4 @@ visibility: hidden;
 #imgs {
 	width: 100%;
 }
-@font-face {
-	  font-family: 'HK Grotesk Light';
-	  src:  url("jonasriemersma.github.io/HKGrotesk-Light.ttf") format: ('truetype'),
-	}
-@font-face {
-	font-family: 'HK Grotesk Semibold';
-	  src:  url("jonasriemersma.github.io/HKGrotesk-Bold.ttf") format: ('truetype'),
-	}
-<link href="//fonts.googleapis.com/css?family=Open+Sans"></link>
+
