@@ -3,15 +3,13 @@
 visibility: hidden;
 }
 .hi {
-font-family: 'CormorantBoldItalic';
-
-
+font-family: 'HKGroteskBold';
 	font-size: 25px;
 	position: fixed; margin-left: -118px; margin-top: 160px; color: #FFFFFF;
 
 }
 .hi1 {
-font-family: 'CormorantBoldItalic';
+font-family: 'HKGroteskBold';
 
 	font-size: 12px;
 	display: none;
