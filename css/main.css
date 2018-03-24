@@ -14,18 +14,4 @@
 #imgs {
 	width: calc(100% /3);
 }
-@font-face {
-	  font-family: 'HK Grotesk Light';
-	  src:  url("../HKGrotesk-Light.ttf") format: ('truetype');
-    font-weight: normal;
-    font-style: normal;
-		  
-	}
-@font-face {
-	font-family: 'HK Grotesk Semibold';
-	  src:  url("../HKGrotesk-Bold.ttf") format: ('truetype');
-              font-weight: normal;
-    font-style: normal;
-		  
-	}
-<link href="//fonts.googleapis.com/css?family=Open+Sans"></link>
+
