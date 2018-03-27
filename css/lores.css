@@ -111,7 +111,7 @@ font-size: 75px;
 .wrapper2 {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 400px 400px ;
+  grid-template-rows: auto auto ;
   grid-gap: 40px;
   background-color:black;
 }
