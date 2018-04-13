@@ -112,7 +112,7 @@ font-size: 75px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto ;
-  grid-gap: 40px;
+  grid-gap: 80px;
   background-color:black;
 }
 
