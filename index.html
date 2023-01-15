@@ -104,13 +104,13 @@
 
   .slider>a {
     display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: white;
+    width: 2rem;
+    height: 2rem;
+
     text-decoration: none;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    
     position: relative;
   }
 
@@ -129,12 +129,12 @@
 
   </p>
 
-<div class="slider" style="font-family:compagnon,monospace; font-size:18pt; margin: 15px; ">
-  <a href="#slide-1" style="background-color: rgb(2, 2, 56)">1</a>
-  <a href="#slide-2" style="background-color: rgb(2, 2, 56)">2</a>
-  <a href="#slide-3" style="background-color: rgb(2, 2, 56)">3</a>
-  <a href="#slide-4" style="background-color: rgb(2, 2, 56)">4</a>
-  <a href="#slide-5" style="background-color: rgb(2, 2, 56)">5</a>
+<div class="slider" style="font-family:compagnon,monospace; font-size:18pt; margin: 15px; position: relative; z-index: 1; ">
+  <a href="#slide-1">1</a>
+  <a href="#slide-2">2</a>
+  <a href="#slide-3">3</a>
+  <a href="#slide-4">4</a>
+  <a href="#slide-5">5</a>
 </div>
 
 
@@ -155,12 +155,13 @@
         <img src="spikyfont.png">
         <p style="position:relative;top: -70px;">Spiky (font)</p>
       </div>
-      <div id="slide-4" style="background-color:rgb(10, 13, 107);">
-        4
+      <div id="slide-4" style="margin-top: 40px; background-color: blue;">
+        <p style="position:relative;top: -70px;">text</p>
       </div>
-      <div id="slide-5" style="background-color:rgb(224, 43, 100);">
-        5
+      <div id="slide-5" style="margin-top: 40px; background-color: red;">
+        <p style="position:relative;top: -70px;">text</p>
       </div>
+      <div style="position:absolute; background: linear-gradient(to right, rgb(2,2,56), rgba(255,255,255,0)); height: 40px; width: 80%;"></div>
     </div>
 
   </div>
