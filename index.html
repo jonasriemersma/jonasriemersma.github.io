@@ -10,6 +10,20 @@
 
 </head>
 
+<script language="JavaScript" type="text/javascript">
+  <!--
+  function keepLocation(oldOffset) {
+    if (window.pageYOffset!= null){
+      st=oldOffset;
+    }
+    if (document.body.scrollWidth!= null){
+      st=oldOffset;
+    }
+    setTimeout('window.scrollTo(0,st)',10);
+  }
+  //-->
+  </script>
+  
 <style>
   @font-face {
     font-family: "compagnon";
@@ -130,11 +144,11 @@
   </p>
 
 <div class="slider" style="font-family:compagnon,monospace; font-size:18pt; margin: 15px; position: relative; z-index: 1; ">
-  <a href="#slide-1">1</a>
-  <a href="#slide-2">2</a>
-  <a href="#slide-3">3</a>
-  <a href="#slide-4">4</a>
-  <a href="#slide-5">5</a>
+  <a href="#slide-1"onclick="keepLocation(window.pageYOffset);" >1</a>
+  <a href="#slide-2"onclick="keepLocation(window.pageYOffset);" >2</a>
+  <a href="#slide-3"onclick="keepLocation(window.pageYOffset);" >3</a>
+  <a href="#slide-4"onclick="keepLocation(window.pageYOffset);" >4</a>
+  <a href="#slide-5"onclick="keepLocation(window.pageYOffset);" >5</a>
 </div>
 
 
