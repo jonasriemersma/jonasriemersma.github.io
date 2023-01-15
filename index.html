@@ -5,7 +5,7 @@
 <head>
   <meta name="google-site-verification" content="eVhqQLuo7KUPqfLWkec3cUNybKnpB_nRpI8jAtNG4ok" />
   <meta name="Jonas Riemersma" content="instagram: @jonasriemersma">
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>Jonas Riemersma</title>
 
 </head>
@@ -48,9 +48,11 @@
   .slides {
     display: flex;
     overflow-x: auto;
+    overflow-y:visible;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    margin-top: -38px;
   }
 
 
@@ -68,9 +70,11 @@
     position: relative;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
+    justify-content: right;
+    align-items: top;
+    font-size: 18pt;
+    
+   
   }
 
   .author-info {
@@ -111,12 +115,13 @@
   }
 
 
+
   
 </style>
 
 <body style="background-color: rgb(2, 2, 56)">
 
-  <p style="font-family:compagnon,monospace; font-size:14pt; color:white; margin-left:15px; margin-top:17px;">Jonas Riemersma <br>
+  <p style="font-family:compagnon,monospace; font-size:18pt; color:white; margin-left:15px; margin-top:17px;">Jonas Riemersma <br>
     <br>Graphic designer based in Arnhem, NL
     <br> Instagram:
     <a href="https://www.instagram.com/jonasriemersma">@jonasriemersma</a>
@@ -124,25 +129,31 @@
 
   </p>
 
-<div class="slider" style="font-family:compagnon,monospace; font-size:14pt; margin: 15px;">
-  <a href="#slide-1" style="background-color: rgba(0, 0, 0, 0);">1</a>
-  <a href="#slide-2" style="background-color: rgba(0, 0, 0, 0);">2</a>
-  <a href="#slide-3" style="background-color: rgba(0, 0, 0, 0);">3</a>
-  <a href="#slide-4" style="background-color: rgba(0, 0, 0, 0);">4</a>
-  <a href="#slide-5" style="background-color: rgba(0, 0, 0, 0);">5</a>
+<div class="slider" style="font-family:compagnon,monospace; font-size:18pt; margin: 15px; ">
+  <a href="#slide-1" style="background-color: rgb(2, 2, 56)">1</a>
+  <a href="#slide-2" style="background-color: rgb(2, 2, 56)">2</a>
+  <a href="#slide-3" style="background-color: rgb(2, 2, 56)">3</a>
+  <a href="#slide-4" style="background-color: rgb(2, 2, 56)">4</a>
+  <a href="#slide-5" style="background-color: rgb(2, 2, 56)">5</a>
 </div>
-  <div class="slider" style="font-family:compagnon,monospace; margin-left: 15px; margin-right:15px;">
+
+
+  <div class="slider" style="font-family:compagnon,monospace; color:white; font-size:18pt; margin-left: 15px; margin-right:15px;">
 
     <div class="slides">
-      <div id="slide-1">
+      
+      <div style="margin-top: 40px;" id="slide-1" >
         <img src="puncposters.jpeg">
-       
+        <p style="position:relative;top: -70px;">Punctuation posters</p>
       </div>
-      <div id="slide-2">
+      
+      <div style="margin-top: 40px;"id="slide-2">
         <img src="nasabook.jpeg">
+        <p style="position:relative;top: -70px;">Into Orbit (book)</p>
       </div>
-      <div id="slide-3">
+      <div style="margin-top: 40px;"id="slide-3">
         <img src="spikyfont.png">
+        <p style="position:relative;top: -70px;">Spiky (font)</p>
       </div>
       <div id="slide-4" style="background-color:rgb(10, 13, 107);">
         4
