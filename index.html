@@ -70,9 +70,9 @@
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
-
+justify-content: right;
     display: flex;
-    justify-content: right;
+
     align-items: top;
     font-size: 18pt;
     
@@ -131,12 +131,14 @@
 
   </p>
 
-<div class="slider" style="font-family:compagnon,monospace; font-size:18pt; margin: 15px; position: relative; z-index: 1; ">
-  <a href="#slide-1"onclick="keepLocation(window.pageYOffset);" >1</a>
-  <a href="#slide-2"onclick="keepLocation(window.pageYOffset);" >2</a>
-  <a href="#slide-3"onclick="keepLocation(window.pageYOffset);" >3</a>
-  <a href="#slide-4"onclick="keepLocation(window.pageYOffset);" >4</a>
-  <a href="#slide-5"onclick="keepLocation(window.pageYOffset);" >5</a>
+  <div style="position:absolute; background: linear-gradient(to right, rgb(2,2,56), rgba(255,255,255,0)); height: 35px; width: 70%; z-index: 1;"></div>
+
+  <div class="slider" style="font-family:compagnon,monospace; font-size:18pt; margin: 15px; position: relative; z-index: 2; ">
+  <a href="#slide-1">1</a>
+  <a href="#slide-2">2</a>
+  <a href="#slide-3">3</a>
+  <a href="#slide-4">4</a>
+  <a href="#slide-5">5</a>
 </div>
 
 
@@ -145,25 +147,31 @@
     <div class="slides">
       
       <div style="margin-top: 40px;" id="slide-1" >
+        <div style="position:absolute; left: 9px; margin-top: -60px; width: 30px; height: 30px;"><p>_</p></div>
         <img src="puncposters.jpeg">
         <p style="position:relative;top: -70px;">Punctuation posters</p>
       </div>
       
       <div style="margin-top: 40px;"id="slide-2">
+        <div style="position:absolute; left: 55px; margin-top: -60px; width: 30px; height: 30px;"><p>_</p></div>
         <img src="nasabook.jpeg">
+        
         <p style="position:relative;top: -70px;">Into Orbit (book)</p>
       </div>
       <div style="margin-top: 40px;"id="slide-3">
+        <div style="position:absolute; left: 102px; margin-top: -60px; width: 30px; height: 30px;"><p>_</p></div>
         <img src="spikyfont.png">
         <p style="position:relative;top: -70px;">Spiky (font)</p>
       </div>
       <div id="slide-4" style="margin-top: 40px; background-color: blue;">
+        <div style="position:absolute; left: 148px; margin-top: -60px; width: 30px; height: 30px;"><p>_</p></div>
         <p style="position:relative;top: -70px;">text</p>
       </div>
       <div id="slide-5" style="margin-top: 40px; background-color: red;">
+        <div style="position:absolute; left: 195px; margin-top: -60px; width: 30px; height: 30px;"><p>_</p></div>
         <p style="position:relative;top: -70px;">text</p>
       </div>
-      <div style="position:absolute; background: linear-gradient(to right, rgb(2,2,56), rgba(255,255,255,0)); height: 40px; width: 70%;"></div>
+      
     </div>
 
   </div>
