@@ -7,37 +7,29 @@
   <meta name="Jonas Riemersma" content="instagram: @jonasriemersma">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>Jonas Riemersma</title>
+  <meta name="description" content="Jonas Riemersma">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
 
 
 <style>
-  @font-face {
-    font-family: "compagnon";
-    src: url("Compagnon-Roman.otf");
-  }
 
-  @font-face {
-    font-family: "compagnonbold";
-    src: url("Compagnon-Bold.otf");
-
-    /*  src: url("Compagnon-Light.otf");
-    src: url("Compagnon-LightItalic.otf");
-    src: url("Compagnon-Medium.otf"); 
-    */
-  }
 
   a:link {
-    color: white;
+    color: black;
   }
 
   a:visited {
-    color: white;
+    color: black;
   }
 
   a:hover {
-    color: white;
-    font-family: compagnonbold;
+    color: black;
+    font-family: manrope;
+    font-weight: 800;
 
   }
 
@@ -64,20 +56,21 @@
     flex-shrink: 0;
 
     width: 100%;
-    height: 90vh;
-    background: #eee;
+    height: 150vh;
+    background: white;
     transform-origin: center center;
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
     justify-content: right;
     display: flex;
-
+    scrollbar-color: white;
     align-items: top;
     font-size: 18pt;
 
 
   }
+
 
   .author-info {
     background: rgba(0, 0, 0, 0.75);
@@ -96,12 +89,12 @@
   }
 
   img {
-    object-fit: cover;
+    object-fit:cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 
   video {
@@ -110,7 +103,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
   }
 
   .slider>a {
@@ -126,9 +119,9 @@
   }
 </style>
 
-<body style="background-color: rgb(2, 2, 56)">
+<body style="background-color: white">
 
-  <p style="font-family:compagnon,monospace; font-size:18pt; color:white; margin-left:15px; margin-top:17px;">Jonas
+  <p style="font-family:manrope,sans-serif; font-size:18pt; color:black; margin-left:15px; margin-top:17px; font-weight:500;">Jonas
     Riemersma <br>
     <br>Graphic designer based in Arnhem, NL
     <br> Instagram:
@@ -138,11 +131,11 @@
   </p>
 
   <div
-    style="position:absolute; background: linear-gradient(90deg, rgba(2,2,56,1) 0%, rgba(2,2,56,1) 71%, rgba(0,0,0,0) 100%); height: 35px; width: 40%; z-index: 1;">
+    style="position:absolute; background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 71%, rgba(0,0,0,0) 100%); height: 37px; width: 40%; z-index: 1; left:0">
   </div>
 
   <div class="slider"
-    style="font-family:compagnon,monospace; font-size:18pt; margin: 15px; position: relative; z-index: 2; ">
+    style="font-family:manrope,sans-serif; font-size:18pt; margin-bottom: 15px; margin-left: 8px; position: relative; z-index: 2; font-weight:500;">
     <a href="#slide-1">1</a>
     <a href="#slide-2">2</a>
     <a href="#slide-3">3</a>
@@ -152,50 +145,56 @@
 
 
   <div class="slider"
-    style="font-family:compagnon,monospace; color:white; font-size:18pt; margin-left: 15px; margin-right:15px;">
+    style="font-family:manrope,sans-serif; color:black; font-size:18pt; left:0;right:0;font-weight:500; position: absolute;">
 
     <div class="slides">
 
       <div style="margin-top: 40px;" id="slide-1">
-        <div style="position:absolute; left: 9px; margin-top: -60px; width: 30px; height: 30px;">
+        <div style="position:absolute; left: 25px; margin-top: -63px; width: 30px; height: 30px;">
           <p>_</p>
         </div>
         <img src="puncposters.jpeg">
-        <p style="position:relative;top: -70px;">Gestural punctuation (posters, 2022)</p>
+        <p style="position:relative;top: -70px; margin-right: 15px;">Gestural punctuation</p>
+        <p style="position: absolute; top: 100vh; left: 0px; margin: 23px;">A series of posters that explore the use of punctuation in writing, and connect it with hand gestures often used in speech. <span style="font-size:17px;"><br><br>Posters, digitally printed, 2022</span></p>
       </div>
 
       <div style="margin-top: 40px;" id="slide-2">
-        <div style="position:absolute; left: 55px; margin-top: -60px; width: 30px; height: 30px;">
+        <div style="position:absolute; left: 61px; margin-top: -63px; width: 30px; height: 30px;">
           <p>_</p>
         </div>
         <video autoplay muted loop>
           <source src="nasabook.mp4" type="video/mp4" style="vertical-align:top" ></video>
 
-        <p style="position:relative;top: -70px;">Into Orbit (book, 2022)</p>
+        <p style="position:relative;top: -70px; margin-right: 15px;">Into Orbit</p>
+        <p style="position: absolute; top: 100vh; left: 0px; margin: 23px;">This book contains raw, unedited photos of our galaxy from the Hubble Space Telescope. It was created using the NASA archive. <span style="font-size:17px;"><br><br>Book, digitally printed, 2022</span></p>
       </div>
       <div style="margin-top: 40px;" id="slide-3">
-        <div style="position:absolute; left: 102px; margin-top: -60px; width: 30px; height: 30px;">
+        <div style="position:absolute; left: 98px; margin-top: -63px; width: 30px; height: 30px;">
           <p>_</p>
         </div>
         <img src="spikyfont.png">
-        <p style="position:relative;top: -70px;">Spiky (font, 2021)</p>
+        <p style="position:relative;top: -70px; margin-right: 15px;">Spiky</p>
+        <p style="position: absolute; top: 100vh; left: 0px; margin: 23px;">A very spiky experimental font. It's still a work in progress, but send me an e-mail if interested!<span style="font-size:17px;"><br><br>Font, 2022</span></p>
       </div>
       <div id="slide-4" style="margin-top: 40px;">
-        <div style="position:absolute; left: 148px; margin-top: -60px; width: 30px; height: 30px;">
+        <div style="position:absolute; left: 135px; margin-top: -63px; width: 30px; height: 30px;">
           <p>_</p>
         </div>
         <video autoplay muted loop>
           <source src="spinny.mp4" type="video/mp4" style="vertical-align:top" ></video>
-        <p style="position:relative;top: -70px;">FaceID-blocking sunglasses (video and sunglasses, 2021)</p>
+        <p style="position:relative;top: -70px; margin-right: 15px;">FaceID-blocking sunglasses</p>
+        <p style="position: absolute; top: 100vh; left: 0px; margin: 23px;">This video work showcases different pairs of sunglasses designed to block face recognition technology by reflecting and blocking infrared light. It also includes instructions on how to create these sunglasses at home.<span style="font-size:17px;"><br><br>Sunglasses and video, 2021</span></p>
 
       </div>
       <div id="slide-5" style="margin-top: 40px;">
-        <div style="position:absolute; left: 195px; margin-top: -60px; width: 30px; height: 30px;">
+        
+        <div style="position:absolute; left: 171px; margin-top: -63px; width: 30px; height: 30px;">
           <p>_</p>
         </div>
         <video autoplay muted loop>
           <source src="typoloop.mp4" type="video/mp4" style="vertical-align:top" ></video>
-        <p style="position:relative;top: -70px;">Here! (installation and video, 2022)</p>
+        <p style="position:relative;top: -70px; margin-right: 15px;">Here!</p>
+        <p style="position: absolute; top: 100vh; left: 0px; margin: 23px;">An installation of five laser-cut letter signs that are lit up in a constantly changing rhythm. The main inspiration behind the project is advertising signage as seen from a car on the motorway.<span style="font-size:17px;"><br><br>Installation and video, 2022</span></p>
         
       </div>
 
