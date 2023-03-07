@@ -47,13 +47,14 @@ https://flickity.metafizzy.co
   position: absolute;
   background: rgba(0,0,0,0);
   border: none;
-  color: blaxk;
+  color: black;
 }
 
 .flickity-button:hover {
   background: rgba(0,0,0,0);
-  color:black;
+  color: rgb(226, 158, 0);
   cursor: pointer;
+
 }
 
 .flickity-button:focus {
@@ -80,13 +81,15 @@ https://flickity.metafizzy.co
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top:30px;
+  top:105.2%;
   width: 44px;
-  height: 100vh;
+  height: 44px;
   border-radius: 50%;
   /* vertically center */
   transform: translateY(-50%);
 }
+
+
 
 .flickity-prev-next-button.previous { right: 5%; }
 .flickity-prev-next-button.next { right:0; }
