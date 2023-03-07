@@ -10,17 +10,18 @@
   <meta name="description" content="Jonas Riemersma">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="flickity.css">
 
 </head>
 
 
 <style>
-
-
   a:link {
     color: black;
+
   }
 
   a:visited {
@@ -28,113 +29,192 @@
   }
 
   a:hover {
-    color: black;
-    font-family: manrope;
-    font-weight: 800;
+    color: rgb(226, 158, 0);
+
 
   }
 
   * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
 
-body { font-family: manrope,sans-serif; }
+  body {
+    font-family: manrope, sans-serif;
+  }
 
-.gallery {
-  background: white;
-  margin:15px;
-}
+  .gallery {
+    background: white;
+    margin: 15px;
+  }
 
-.gallery-cell {
-  width: 100vw;
-  height: 150vh;
+  .gallery-cell {
+    width: 100vw;
+    height: 100vh;
 
-  background: white;
-  counter-increment: gallery-cell;
+    background: white;
+    counter-increment: gallery-cell;
 
-  
-}
 
-/* cell number */
-.gallery-cell:before {
-  display: block;
- 
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
-}
+  }
 
-img {
-    object-fit:cover;
+  /* cell number */
+  .gallery-cell:before {
+    display: block;
+
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+  }
+
+  .gallery-cell img {
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
- 
+
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-cell video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
     height: 67.7%;
   }
 
   video {
-    object-fit:cover;
-    position: absolute;
-    top: 0;
-    left: 0;
- 
+
     width: 100%;
-    height: 67.7%;
+   
   }
 
+  img {
+    width: 100%;
+  }
 
+  .caption {
+
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  * {
+    font-family: labrada, serif;
+    font-size: 22px;
+    font-weight: 400;
+  }
+  hr { 
+    border: none;
+    border-top: 1px double black;
+
+    background-color: black;
+    overflow: visible;
+    text-align: center;
+    height: 2px;
+  }
+
+  
 </style>
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
 
-<body style="background-color: white">
-  
-  <p style="font-family:manrope,sans-serif; font-size:18pt; color:black; margin-left:15px; margin-top:17px; font-weight:500;">Jonas
-    Riemersma <br>
-    <br>Graphic designer based in Arnhem, NL
-    <br> Instagram:
-    <a href="https://www.instagram.com/jonasriemersma">@jonasriemersma</a>
-    <br> E-mail: <a href="mailto:jonasriemersma@gmail.com">jonasriemersma@gmail.com</a><br><br>
+<body style="color: black; background-color: white;">
 
-  </p>
+  <!-- grid-template-rows
+-->
 
-  <div class="gallery js-flickity" data-flickity='{ "wrapAround": true, "pageDots": false}'style="font-family:manrope,sans-serif; font-size:18pt; font-weight:500;">
-    
-    <div class="gallery-cell" style="margin-top: 60px;">   
-    <img src="puncposters.jpeg">
-    <div style="position:absolute; top: -50px; left: 23px;">Gestural punctuation</div><br>
-    <p style="position:absolute; top:67.7%; left: 23px;">A series of posters that explore the use of punctuation in writing, and connect it with hand gestures often used in speech. <span style="font-size:17px;"><br><br>Posters, digitally printed, 2022</span></p>
+  <div
+    style=" display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 1.7%;">
+    <div>
+      Jonas Riemersma <br> Graphic designer based in Arnhem, NL<br><br>
+    </div>
+    <div>
+      Instagram: <a href="https://www.instagram.com/jonasriemersma">@jonasriemersma</a><br>
+      E-mail: <a href="mailto:jonasriemersma@gmail.com">jonasriemersma@gmail.com</a><br><br>
+    </div>
   </div>
-    <div class="gallery-cell" style="margin-top: 60px;">
-    <video autoplay muted loop>
-      <source src="nasabook.mp4" type="video/mp4" style="vertical-align:top" ></video>
-    <div style="position:absolute; top: -50px; left: 23px;">Into Orbit</div><br>
-    <p style="position:absolute; top:67.7%; left: 23px;">This book contains raw, unedited photos of our galaxy from the Hubble Space Telescope. It was created using the NASA archive.<span style="font-size:17px;"><br><br>Book, digitally printed, 2022</span></p>
+
+
+  <div class="gallery js-flickity"
+    data-flickity='{ "wrapAround": true, "pageDots": false, "autoPlay": 5000, "pauseAutoPlayOnHover": false}'
+    style="font-size:18pt; font-weight:500; margin: 1%;">
+
+    <div class="gallery-cell">
+      <img src="plot4.jpeg">
+
+    </div>
+    <div class="gallery-cell">
+      <img src="plot2.jpeg">
+    </div>
+
+    <div class="gallery-cell">
+      <img src="plot5.jpeg">
+    </div>
+
+    <div class="gallery-cell">
+      <img src="plot3.jpeg">
+    </div>
   </div>
-    <div class="gallery-cell" style="margin-top: 60px;">
-    <img src="spikyfont.png">
-    <div style="position:absolute; top: -50px; left: 23px;">Spiky</div><br>
-    <p style="position:absolute; top:67.7%; left: 23px;">A very spiky experimental font. It's still a work in progress, but send me an e-mail if interested! <span style="font-size:17px;"><br><br>Font, 2022</span></p>
+
+  <div style="position:static; margin-top: 0%; margin-left: 1%; margin-right: 1%; z-index: 5;">
+    <p>Plotted posters <br> <br>Lately, I have been using a pen plotter to make experimental posters playing around with
+      image and typography. The pen plotter can create interesting textures that can't be created with other printing
+      techniques. If you're interested in one, send me an e-mail!</i></span></p>
   </div>
-    <div class="gallery-cell" style="margin-top: 60px;"> 
+  <br>
+  <hr style="margin: 1%;">
+
+  </div>
+  <div
+    style="display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 3%;">
+    <div>
+
       <video autoplay muted loop>
-        <source src="spinny.mp4" type="video/mp4" style="vertical-align:top" ></video>
-    <div style="position:absolute; top: -50px; left: 23px;">FaceID-blocking sunglasses</div><br>
-    <p style="position:absolute; top:67.7%; left: 23px;">This video work showcases different pairs of sunglasses designed to block face recognition technology by reflecting and blocking infrared light. It also includes instructions on how to create these sunglasses at home.<span style="font-size:17px;"><br><br>Sunglasses and video, 2021</span></p>
+        <source src="spinny.mp4" type="video/mp4" style="position: relative;">
+      </video>
+    </div>
+    <div style="position: relative; top: -2.5%">
+      Face recognition-blocking sunglasses<br> <br>This short video showcases different pairs of sunglasses designed to
+      block face recognition technology by reflecting and blocking infrared light. It also shows instructions on how to
+      make these sunglasses yourself.<br>
+      <p class="caption">Sunglasses and video, 2021</caption>
+    </div>
   </div>
-    <div class="gallery-cell" style="margin-top: 60px;">
+  <div
+    style="display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 3%;">
+    <div>
       <video autoplay muted loop>
-        <source src="typoloop.mp4" type="video/mp4" style="vertical-align:top" ></video>
-    <div style="position:absolute; top: -50px; left: 23px;">Here!</div><br>
-    <p style="position:absolute; top:67.7%; left: 23px;">An installation of five laser-cut letter signs that are lit up in a constantly changing rhythm. The main inspiration behind the project is advertising signage as seen from a car on the motorway.<span style="font-size:17px;"><br><br>Installation and video, 2022</span></p>
+        <source src="nasabook.mp4" type="video/mp4" style="position: relative;">
+      </video>
+    </div>
+    <div  style="position: relative; top: -2.5%">
+      Into Orbit <br> <br>This book contains raw, unedited photos of our galaxy from
+      the Hubble Space Telescope. It was created using the photo archives of NASA and STScI. <br>
+      <p class="caption">Book, 2022</caption>
+    </div>
   </div>
+  <div
+    style="display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 3%;">
+    <div>
+      <img src="puncposters.jpeg" style="position: relative;">
+    </div>
+    <div style="position: relative; top: -2.5%">
+      Punctuation posters<br> <br>A series of posters that explore the use of punctuation in writing, and connect it
+      with hand gestures often used in speech. <br>
+      <p class="caption">Posters, digitally printed, 2022</caption>
+    </div>
   </div>
+
+
+
 
 </body>
 
