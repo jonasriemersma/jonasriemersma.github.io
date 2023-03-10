@@ -29,8 +29,8 @@
   }
 
   a:hover {
-    color: rgb(226, 158, 0);
-
+    color: white;
+    background-color: rgb(31, 43, 255);
 
   }
 
@@ -91,7 +91,7 @@
   video {
 
     width: 100%;
-   
+
   }
 
   img {
@@ -109,7 +109,8 @@
     font-size: 22px;
     font-weight: 400;
   }
-  hr { 
+
+  hr {
     border: none;
     border-top: 1px double black;
 
@@ -119,10 +120,32 @@
     height: 2px;
   }
 
-  
+  details {
+    user-select: none;
+  }
+
+  summary {
+    display: flex;
+
+  }
+
+  .summarytext {
+    cursor: pointer;
+  }
+
+  .summarytext:hover {
+    color: white;
+    background-color: rgb(31, 43, 255);
+
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
 </style>
 
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js">
+</script>
 
 
 
@@ -133,14 +156,25 @@
 
   <div
     style=" display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 1.7%;">
-    <div>
-      Jonas Riemersma <br> Graphic designer based in Arnhem, NL<br><br>
-    </div>
+    <details>
+      <summary>
+        <p style="margin:0px;">Jonas Riemersma<br>Graphic designer based in Arnhem, NL.&puncsp;</p>
+        <p style="margin-top: 32.2px; position: relative; text-decoration: underline;" class="summarytext">About</p>
+
+        </span>
+      </summary>
+      <p style="margin-top: 15px; margin-bottom: 35px;">
+        Most of the time I'm working with experimental typography and printing, identity design, and book design. This I do for clients or by myself. I'm
+        currently studying BA Graphic Design at ArtEZ Arnhem.
+      </p>
+    </details>
     <div>
       Instagram: <a href="https://www.instagram.com/jonasriemersma">@jonasriemersma</a><br>
       E-mail: <a href="mailto:jonasriemersma@gmail.com">jonasriemersma@gmail.com</a><br><br>
     </div>
   </div>
+
+
 
 
   <div class="gallery js-flickity"
@@ -195,10 +229,10 @@
         <source src="nasabook.mp4" type="video/mp4" style="position: relative;">
       </video>
     </div>
-    <div  style="position: relative; top: -2.5%">
+    <div style="position: relative; top: -2.5%">
       Into Orbit <br> <br>This book contains raw, unedited photos of our galaxy from
       the Hubble Space Telescope. It was created using the photo archives of NASA and STScI. <br>
-      <p class="caption">Book, 2022</caption>
+      <p class="caption">Book, self-published, 2022</caption>
     </div>
   </div>
   <div
@@ -209,7 +243,7 @@
     <div style="position: relative; top: -2.5%">
       Punctuation posters<br> <br>A series of posters that explore the use of punctuation in writing, and connect it
       with hand gestures often used in speech. <br>
-      <p class="caption">Posters, digitally printed, 2022</caption>
+      <p class="caption">3x A1 posters, 2022</caption>
     </div>
   </div>
 
