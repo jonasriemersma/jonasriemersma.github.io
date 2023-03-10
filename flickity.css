@@ -52,8 +52,9 @@ https://flickity.metafizzy.co
 
 .flickity-button:hover {
   background: rgba(0,0,0,0);
-  color: rgb(226, 158, 0);
+  color: white;
   cursor: pointer;
+  background-color: rgb(31, 43, 255);
 
 }
 
@@ -81,10 +82,10 @@ https://flickity.metafizzy.co
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  top:105.2%;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  top:105%;
+  width: 70px;
+  height: 37px;
+  border-radius: 0%;
   /* vertically center */
   transform: translateY(-50%);
 }
