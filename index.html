@@ -7,6 +7,7 @@
   <meta name="Jonas Riemersma" content="instagram: @jonasriemersma">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>Jonas Riemersma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Jonas Riemersma">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -131,6 +132,7 @@
 
   .summarytext {
     cursor: pointer;
+    margin-top: 32.2px;
   }
 
   .summarytext:hover {
@@ -141,6 +143,69 @@
 
   summary::-webkit-details-marker {
     display: none;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: 48.7% 48.7%;
+    grid-column-gap: 1.6%;
+    margin-left: 1%;
+    margin-top: 1.7%;
+  }
+
+  .therest {
+    display: grid;
+    grid-template-columns: 48.7% 48.7%;
+    grid-column-gap: 1.6%;
+    margin-left: 1%;
+    margin-top: 3%;
+  }
+
+  .resttext {
+    position: relative;
+    top: -2.5%
+  }
+
+
+  @media screen and (max-aspect-ratio: 1/1) {
+    * {
+      font-family: labrada, serif;
+      font-size: 4.5vw;
+      font-weight: 400;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 97.4%;
+      grid-column-gap: 1.6%;
+      margin-left: 1%;
+      margin-top: 1.7%;
+    }
+
+    .therest {
+      display: grid;
+      grid-template-columns: 97.4%;
+      grid-column-gap: 1.6%;
+      margin-left: 1%;
+      margin-top: 8%;
+    }
+
+    .resttext {
+      position: relative;
+      top: 8%;
+      margin-bottom: 3%;
+    }
+
+    .summarytext {
+      margin-top: 6.7vw;
+    }
+
+    .caption {
+
+      font-size: 3.2vw;
+      font-style: italic;
+    }
+
   }
 </style>
 
@@ -154,17 +219,17 @@
   <!-- grid-template-rows
 -->
 
-  <div
-    style=" display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 1.7%;">
+  <div class="header">
     <details>
       <summary>
         <p style="margin:0px;">Jonas Riemersma<br>Graphic designer based in Arnhem, NL.&puncsp;</p>
-        <p style="margin-top: 32.2px; position: relative; text-decoration: underline;" class="summarytext">About</p>
+        <p style="position: relative; text-decoration: underline;" class="summarytext">About</p>
 
         </span>
       </summary>
       <p style="margin-top: 15px; margin-bottom: 35px;">
-        Most of the time I'm working with experimental typography and printing, identity design, and book design. This I do for clients or by myself. I'm
+        Most of the time I'm working with experimental typography and printing, identity design, and book design. This I
+        do for clients or by myself. I'm
         currently studying BA Graphic Design at ArtEZ Arnhem.
       </p>
     </details>
@@ -207,40 +272,39 @@
   <hr style="margin: 1%;">
 
   </div>
-  <div
-    style="display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 3%;">
+  <div class="therest">
     <div>
 
       <video autoplay muted loop>
         <source src="spinny.mp4" type="video/mp4" style="position: relative;">
       </video>
     </div>
-    <div style="position: relative; top: -2.5%">
+    <div class="resttext">
       Face recognition-blocking sunglasses<br> <br>This short video showcases different pairs of sunglasses designed to
       block face recognition technology by reflecting and blocking infrared light. It also shows instructions on how to
       make these sunglasses yourself.<br>
       <p class="caption">Sunglasses and video, 2021</caption>
     </div>
   </div>
-  <div
-    style="display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 3%;">
+
+  <div class="therest">
     <div>
       <video autoplay muted loop>
         <source src="nasabook.mp4" type="video/mp4" style="position: relative;">
       </video>
     </div>
-    <div style="position: relative; top: -2.5%">
+    <div class="resttext">
       Into Orbit <br> <br>This book contains raw, unedited photos of our galaxy from
       the Hubble Space Telescope. It was created using the photo archives of NASA and STScI. <br>
       <p class="caption">Book, self-published, 2022</caption>
     </div>
   </div>
-  <div
-    style="display: grid; grid-template-columns: 48.7% 48.7%; grid-column-gap: 1.6%; margin-left: 1%; margin-top: 3%;">
+ 
+  <div class="therest">
     <div>
       <img src="puncposters.jpeg" style="position: relative;">
     </div>
-    <div style="position: relative; top: -2.5%">
+    <div class="resttext">
       Punctuation posters<br> <br>A series of posters that explore the use of punctuation in writing, and connect it
       with hand gestures often used in speech. <br>
       <p class="caption">3x A1 posters, 2022</caption>
