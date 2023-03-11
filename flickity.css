@@ -131,11 +131,10 @@ https://flickity.metafizzy.co
   }
 
   .flickity-prev-next-button {
-    top: -webkit-calc(100% + 8vw);
-    top: -moz-calc(100% + 8vw);
-    top: calc(100% + 8vw);
+    top: 100%;
     width: 8vw;
     height: 8vw;
+    margin-top: 8vw;
 
     border-radius: 0%;
     /* vertically center */
