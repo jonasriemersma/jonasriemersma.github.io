@@ -123,14 +123,24 @@ https://flickity.metafizzy.co
 
 @media screen and (max-aspect-ratio: 1/1) {
   .flickity-prev-next-button.previous {
-    right: 15vw;
+    right: 17vw;
   }
 
   .flickity-prev-next-button.next {
     right: 0%;
   }
 
+  .flickity-prev-next-button {
+    top: -webkit-calc(100% + 8vw);
+    top: -moz-calc(100% + 8vw);
+    top: calc(100% + 8vw);
+    width: 8vw;
+    height: 8vw;
 
+    border-radius: 0%;
+    /* vertically center */
+    transform: translateY(-50%);
+  }
 
 }
 
