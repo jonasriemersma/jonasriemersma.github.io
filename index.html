@@ -14,230 +14,29 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="flickity.css">
+  <link rel="stylesheet" href="style.css" />
 
 </head>
 
-
-<style>
-  a:link {
-    color: black;
-
-  }
-
-  a:visited {
-    color: black;
-  }
-
-  a:hover {
-    color: white;
-    background-color: rgb(31, 43, 255);
-
-  }
-
-  * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: manrope, sans-serif;
-  }
-
-  .gallery {
-    background: white;
-    margin: 15px;
-  }
-
-  .gallery-cell {
-    width: 100vw;
-    height: 100vh;
-
-    background: white;
-    counter-increment: gallery-cell;
-  }
-
-  /* cell number */
-  .gallery-cell:before {
-    display: block;
-
-    content: counter(gallery-cell);
-    line-height: 200px;
-    font-size: 80px;
-    color: white;
-  }
-
-  .gallery-cell img {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-  }
-
-  .gallery-cell video {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 67.7%;
-  }
-
-  video {
-
-    width: 100%;
-
-  }
-
-  img {
-    width: 100%;
-  }
-
-  .caption {
-
-    font-size: 18px;
-    font-style: italic;
-  }
-
-  * {
-    font-family: labrada, serif;
-    font-size: 22px;
-    font-weight: 400;
-  }
-
-  hr {
-    border: none;
-    border-top: 1px double black;
-
-    background-color: black;
-    overflow: visible;
-    text-align: center;
-    height: 2px;
-  }
-
-  details {
-    user-select: none;
-  }
-
-  summary {
-    display: flex;
-
-  }
-
-  .summarytext {
-    cursor: pointer;
-    margin-top: 32.2px;
-    color: black;
-  }
-
-  .summarytext:hover {
-    color: white;
-    background-color: rgb(31, 43, 255);
-
-  }
-
-  summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .header {
-    display: grid;
-    grid-template-columns: 48.7% 48.7%;
-    grid-column-gap: 1.6%;
-    margin-left: 1%;
-    margin-top: 1.7%;
-  }
-
-  .therest {
-    display: grid;
-    grid-template-columns: 48.7% 48.7%;
-    grid-column-gap: 1.6%;
-    margin-left: 1%;
-    margin-top: 3%;
-  }
-
-  .resttext {
-    position: relative;
-    top: -10px
-  }
-
-
-  @media screen and (max-aspect-ratio: 1/1) {
-    * {
-      font-family: labrada, serif;
-      font-size: 4.5vw;
-      font-weight: 400;
-    }
-
-    .header {
-      display: grid;
-      grid-template-columns: 97.4%;
-      grid-column-gap: 1.6%;
-      margin-left: 1%;
-      margin-top: 1.7%;
-    }
-
-    .therest {
-      display: grid;
-      grid-template-columns: 97.4%;
-      grid-column-gap: 1.6%;
-      margin-left: 1%;
-      margin-top: 8%;
-    }
-
-    .resttext {
-      position: relative;
-      top: 8%;
-      margin-bottom: 3%;
-    }
-
-    .summarytext {
-      margin-top: 6.7vw;
-      color: white;
-    }
-
-    .caption {
-
-      font-size: 3.8vw;
-      font-style: italic;
-    }
-    .gallery-cell {
-    width: 100vw;
-    height: 45vh;
-
-    background: white;
-    counter-increment: gallery-cell;
-
-
-  }
-
-  }
-</style>
-
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js">
+<script src="flickity.pkgd.js">
 </script>
 
-
-
-<body style="color: black; background-color: white;">
-
-  <!-- grid-template-rows
--->
+<body>
 
   <div class="header">
     <details>
       <summary>
-        <p style="margin:0px;">Jonas Riemersma<br>Graphic designer based in Arnhem, NL.&puncsp;</p>
-        <p style="position: relative; text-decoration: underline;" class="summarytext">About</p>
 
-        </span>
+        <a href="index.html" class="homelink">Jonas Riemersma</a><br>Graphic designer based in Arnhem, NL.&ensp;
+        <span style="position: relative; text-decoration: underline;" class="summarytext">About&#x2192;</span>
+
       </summary>
-      <p style="margin-top: 15px; margin-bottom: 35px;">
-        Most of the time I'm working with experimental typography and printing, identity design, and book design. This I
+      <p style="margin-top: 1.8rem; margin-bottom: 1.8rem;">
+        Most of the time I'm working with experimental typography and printing, identity design, and book
+        design. This I
         do for clients or by myself. I'm
         currently studying BA Graphic Design at ArtEZ Arnhem.
       </p>
@@ -249,14 +48,12 @@
   </div>
 
 
-
-
   <div class="gallery js-flickity"
     data-flickity='{ "wrapAround": true, "pageDots": false, "autoPlay": 5000, "pauseAutoPlayOnHover": false}'
     style="font-size:18pt; font-weight:500; margin: 1%;">
 
     <div class="gallery-cell">
-      <img src="plot4.jpeg">
+      <img src="plot5.jpeg">
 
     </div>
     <div class="gallery-cell">
@@ -264,7 +61,7 @@
     </div>
 
     <div class="gallery-cell">
-      <img src="plot5.jpeg">
+      <img src="plot4.jpeg">
     </div>
 
     <div class="gallery-cell">
@@ -272,37 +69,50 @@
     </div>
   </div>
 
-  <div style="position:static; margin-top: 0%; margin-left: 1%; margin-right: 1%; z-index: 5;">
-    <p>Plotted posters <br> <br>Lately, I have been using a pen plotter to make experimental posters playing around with
+  <div class="textundergallery">
+    <h2>Plotted posters</h2><p>Lately, I have been using a pen plotter to
+      make experimental posters playing around with
       image and typography. The pen plotter can create interesting textures that can't be created with other printing
       techniques. If you're interested in one, send me an e-mail!</i></span></p>
   </div>
   <br>
   <hr style="margin: 1%;">
 
+
   </div>
 
   <div class="therest">
-    <div>
-      <video autoplay muted loop disablePictureInPicture playsinline>
-        <source src="nasabook2.mp4" type="video/mp4" style="position: relative;">
-      </video>
-    </div>
+    <a href="intoorbit.html">
+      <div class="therestimg">
+        <span>See more&#x2192;</span>
+        <video class="therestimglayer" autoplay muted loop disablePictureInPicture playsinline>
+          <source src="nasabook2.mp4">
+        </video>
+      </div>
+    </a>
     <div class="resttext">
-      Into Orbit <br> <br>This book contains raw, unedited photos of our galaxy from
-      the Hubble Space Telescope. It was created using the photo archives of NASA and STScI. <br>
-      <p class="caption">Book, self-published, 2022</caption>
+      <h2>Into Orbit</h2>
+      <p>This book contains raw, unedited photos of our galaxy from the Hubble Space Telescope. It was created using the photo archives of NASA and STScI.
+        <a href="intoorbit.html">&#x2192;</a><br></p>
+      <em>Book, self-published, 2022</em>
     </div>
   </div>
 
   <div class="therest">
-    <div>
-      <img src="puncposters copy.jpeg" style="position: relative;">
-    </div>
+    <a href="puncposters.html">
+      <div class="therestimg">
+        <span>See more&#x2192;</span>
+        <img class="therestimglayer" src="puncposters copy.jpeg">
+      </div>
+    </a>
     <div class="resttext">
-      Punctuation posters<br> <br>A series of posters that explore the use of punctuation in writing, and connect it
-      with hand gestures often used in speech. <br>
-      <p class="caption">3x A1 posters, 2022</caption>
+      <h2>Punctuation posters</h2>
+      <p>A series of posters that explore the use
+        of punctuation in writing, and connect it
+        with hand gestures often used in speech.
+        <a href="puncposters.html">&#x2192;</a><br>
+      </p>
+      <em>3x A1 posters, 2022</em>
     </div>
   </div>
 
