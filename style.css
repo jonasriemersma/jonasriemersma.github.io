@@ -1,0 +1,291 @@
+/* TEXT AND MEDIA TAGS*/
+
+* {
+    font-family: labrada, serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 131%;
+    color: black;
+    background-color: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;  
+}
+
+em{
+    font-size: 0.95rem;
+    font-style: normal;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 0.2rem;
+    margin-top: 0px;
+}
+
+i {
+    font-style: italic;
+}
+
+video {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    border: none;
+    border-top: 1px double black;
+
+    background-color: black;
+    overflow: visible;
+    text-align: center;
+    height: 2px;
+}
+
+
+
+
+/* LINK TAGS */
+
+a:link {
+    color: black;
+
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(82, 91, 255);
+
+}
+
+.homelink{
+    margin:0px; 
+    text-decoration: none;
+}
+.homelink:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* POP-OUT MENU */
+
+details {
+    user-select: none;
+}
+
+summary {
+    display: block;
+}
+
+.summarytext {
+    cursor: pointer;
+    color: black;
+    position: relative;
+}
+
+.summarytext:hover {
+    color: white;
+    background-color: rgb(82, 91, 255);
+
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+
+
+
+/* FLICKITY IMAGE CAROUSEL*/
+
+.gallery {
+    background: white;
+    margin: 15px;
+}
+
+.gallery-cell {
+    width: 100vw;
+    height: 100vh;
+
+    background: white;
+    counter-increment: gallery-cell;
+}
+
+.gallery-cell:before {
+    display: block;
+
+    content: counter(gallery-cell);
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.gallery-cell img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-cell video {
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 67.7%;
+}
+
+.textundergallery{
+    position:static; margin-top: 22px; margin-left: 1%; margin-right: 1%; z-index: 5;
+}
+
+
+
+
+/* TEXT AND IMAGE GRID */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.6%;
+    margin-left: 1%;
+    margin-top: 1.7%;
+}
+
+.therest {
+    display: grid;
+    grid-template-columns: 48.7% 48.7%;
+    grid-column-gap: 1.6%;
+    margin-left: 1%;
+    margin-top: 3%;
+
+}
+
+.therestimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0);
+}
+
+.therestimg:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.therestimg span {
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute; 
+    z-index: 1;
+}
+
+.therestimg:hover span {
+    color: white;
+    background-color: rgb(82, 91, 255);
+    text-decoration: underline;
+    pointer-events: none;
+}
+
+
+.therestimglayer:hover {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+
+.resttext {
+    position: relative;
+    top: -10px;
+
+}
+
+.aboutgrid {
+    display: grid;
+    grid-template-columns: 13.5% 1fr 13.5%;
+    grid-column-gap: 1.6%;
+    grid-row-gap:1.6%;
+    margin-left: 1%;
+    margin-top: 1.7%;
+}
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+    * {
+        font-family: labrada, serif;
+        font-size: 4.5vw;
+        font-weight: 400;
+    }
+
+    em {
+        font-size: 3.8vw;
+    }
+
+    .gallery-cell {
+        width: 100vw;
+        height: 45vh;
+
+        background: white;
+        counter-increment: gallery-cell;
+
+
+    }
+
+    .textundergallery{
+        position:static; margin-top: 18px; margin-left: 1%; margin-right: 1%; z-index: 5;
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        margin-left: 1%;
+        margin-top: 1.7%;
+    }
+
+    .therest {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        margin-left: 1%;
+        margin-top: 8%;
+
+    }
+
+    .resttext {
+        position: relative;
+        top: 8%;
+        margin-bottom: 3%;
+
+    }
+
+    summary{
+        margin-bottom: 1.2rem;
+    }
+
+    .aboutgrid {
+        display: grid;
+        grid-template-columns: 0% 97.4% 0%;
+        grid-column-gap: 1.6%;
+        grid-row-gap:1.6%;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1.7%;
+    }
+    
+
+}
