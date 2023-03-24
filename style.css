@@ -227,12 +227,12 @@ summary::-webkit-details-marker {
 @media screen and (max-aspect-ratio: 1/1) {
     * {
         font-family: labrada, serif;
-        font-size: 4.5vw;
+        font-size: 5vw;
         font-weight: 400;
     }
 
     em {
-        font-size: 3.8vw;
+        font-size: 4vw;
     }
 
     .gallery-cell {
