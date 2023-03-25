@@ -179,12 +179,14 @@ summary::-webkit-details-marker {
     justify-content: center;
     align-items: center;
     color: rgba(0, 0, 0, 0);
+    
 }
 
 .therestimg:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .therestimg span {
