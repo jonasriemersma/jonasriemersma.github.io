@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta name="google-site-verification" content="eVhqQLuo7KUPqfLWkec3cUNybKnpB_nRpI8jAtNG4ok" />
+  <meta name="Jonas Riemersma" content="instagram: @jonasriemersma">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Jonas Riemersma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jonas Riemersma">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Labrada:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="flickity.css">
+  <link rel="stylesheet" href="style1.css" />
+
+</head>
+
+<script src="flickity.pkgd.js">
+</script>
+
+<body>
+
+
+  <div class="header">
+    <div class="head">
+      Jonas Riemersma<br>Graphic designer based in
+      Arnhem, NL<br><br>
+
+    </div>
+
+
+    <div class="head">
+
+      Usually I work with experimental typography, book design, and whatever else comes my way. This
+      I do for clients or by myself. I'm currently studying Graphic Design (BA) at ArtEZ Arnhem. You can find me
+      on&nbsp;<a href="https://www.instagram.com/jonasriemersma" class="specheader">Instagram.</a><i
+        class="specheader">&nbsp;Any inquiries? Send
+        me an e-mail: jonasriemersma[at]gmail.com.&nbsp;</i><br>
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <div style="height: 30vh"></div>
+  <div style="height: 30vh; background-image: linear-gradient(rgba(0, 0, 0, 0), black); position: relative;"></div>
+
+
+
+
+  <div class="containeverything" style="background-color: black; position: relative;">
+
+
+    <div class="flippytextcont">Perpetualplottingproject<span class="flippytext" onclick="Flip()">Info ↘</span>
+    </div>
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+
+          <div class="gallery js-flickity"
+            data-flickity='{ "wrapAround": true, "pageDots": false,  "pauseAutoPlayOnHover": false}'>
+
+            <div class="gallery-cell">
+              <img src="assets/plot5.jpeg">
+            </div>
+
+            <div class="gallery-cell">
+              <img src="assets/IMG_9634 copy.jpeg">
+            </div>
+
+            <div class="gallery-cell">
+              <img src="assets/plot4.jpeg">
+            </div>
+
+            <div class="gallery-cell">
+              <img src="assets/IMG_1199.jpeg">
+            </div>
+
+          </div>
+        </div>
+        <div class="flip-box-back">
+
+          <div class="gridcontain">
+            <div>For a while I have been using a pen plotter to
+              make experimental posters playing around with
+              image and typography. The pen plotter can create interesting textures that can't be created with other
+              printing techniques. You can use any pen with it, from thick black markers to dainty little glitter pens.
+              I’m
+              currently working on a little prothesis for it to make it fit larger pens and other tools. <br><br>I
+              mostly
+              create repeating patterns and waves that reveal bigger images, constantly trying
+              to find new possibilities both with the machine and in the computer programs used to create a
+              design. <br><br><span class="caption">Various plotted images, 2022-2023</span></div>
+            <div><img class="othersideimg" src="assets/IMG_1204 copy.jpeg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="flippytextcont">Colon / Quotation marks / Question mark<span class="flippytext" onclick="Flip1()">Info
+        ↘</span></div>
+
+    <div class="flip-box" style="margin-top: -20px; padding-top: 10px;">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+
+          <div class="therest">
+            <div class="therestimg">
+              <img id="myimage" src="assets/puncadjusted.png">
+            </div>
+            <div class="resttext">
+              <div id="myresult" class="img-zoom-result"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flip-box-back">
+
+
+          <div class="gridcontain" style="margin-top: 10px;">
+            <div>A series of posters that explore the use of punctuation in writing, and
+              connect
+              it with hand gestures often used in speech.
+              <br><br>
+              <span class="caption">Poster series, 2022</span>
+            </div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flippytextcont">Into Orbit<span class="flippytext" onclick="Flip2()">Info ↘</span>
+    </div>
+
+
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-front">
+
+          <video autoplay muted loop disablePictureInPicture playsinline>
+            <source src="assets/nasabook2.mp4">
+        </div>
+        <div class="flip-box-back">
+
+          <div class="gridcontain">
+            <div>This book contains raw, unedited photos of our galaxy from the Hubble Space Telescope. It was created
+              using the photo archives of NASA and STScI.
+              <br><br>
+              <span class="caption"> Book, self-published, 2022</span>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <script src="flip.js"></script>
+      <script>function imageZoom(imgID, resultID) {
+          var img, lens, result, cx, cy;
+          img = document.getElementById(imgID);
+          result = document.getElementById(resultID);
+          /* Create lens: */
+          lens = document.createElement("DIV");
+          lens.setAttribute("class", "img-zoom-lens");
+          /* Insert lens: */
+          img.parentElement.insertBefore(lens, img);
+          /* Calculate the ratio between result DIV and lens: */
+          cx = result.offsetWidth / lens.offsetWidth;
+          cy = result.offsetHeight / lens.offsetHeight;
+          /* Set background properties for the result DIV */
+          result.style.backgroundImage = "url('" + img.src + "')";
+          result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+          /* Execute a function when someone moves the cursor over the image, or the lens: */
+          lens.addEventListener("mousemove", moveLens);
+          img.addEventListener("mousemove", moveLens);
+          /* And also for touch screens: */
+          lens.addEventListener("touchmove", moveLens);
+          img.addEventListener("touchmove", moveLens);
+          function moveLens(e) {
+            var pos, x, y;
+            /* Prevent any other actions that may occur when moving over the image */
+            e.preventDefault();
+            /* Get the cursor's x and y positions: */
+            pos = getCursorPos(e);
+            /* Calculate the position of the lens: */
+            x = pos.x - (lens.offsetWidth / 2);
+            y = pos.y - (lens.offsetHeight / 2);
+            /* Prevent the lens from being positioned outside the image: */
+            if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
+            if (x < 0) { x = 0; }
+            if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
+            if (y < 0) { y = 0; }
+            /* Set the position of the lens: */
+            lens.style.left = x + "px";
+            lens.style.top = y + "px";
+            /* Display what the lens "sees": */
+            result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+          }
+          function getCursorPos(e) {
+            var a, x = 0, y = 0;
+            e = e || window.event;
+            /* Get the x and y positions of the image: */
+            a = img.getBoundingClientRect();
+            /* Calculate the cursor's x and y coordinates, relative to the image: */
+            x = e.pageX - a.left;
+            y = e.pageY - a.top;
+            /* Consider any page scrolling: */
+            x = x - window.pageXOffset;
+            y = y - window.pageYOffset;
+            return { x: x, y: y };
+          }
+        } </script>
+
+      <script>
+        imageZoom("myimage", "myresult");
+      </script>
+</body>
+
+</html>
