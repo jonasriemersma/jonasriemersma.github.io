@@ -62,28 +62,16 @@ em {
     text-decoration: none;
 }
 
-h2 {
-    margin-bottom: 0.2rem;
-    margin-top: 0px;
-    font-weight: normal;
 
-    font-style: italic;
-    font-family: "abc diatype edu";
+.topspacer{
+    height: 30vh;
 }
 
-h2:hover {
-    font-size: 3rem;
-    text-decoration: underline;
-}
 
-h3 {
-    margin-bottom: 0.2rem;
-    margin-top: 0px;
-    font-weight: normal;
-    font-size: 5rem;
-
-    font-style: italic;
-    font-family: "abc diatype edu light";
+h1 {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 400;
 }
 
 i {
@@ -209,11 +197,12 @@ a:hover {
     grid-column-gap: 1.6%;
     margin-left: 1%;
     margin-right: 1%;
-    margin-top: 1.7%;
-    font-size: 1.4rem;
+    margin-top: 0.3%;
 
     position: fixed;
 }
+
+
 
 .therest {
     display: grid;
@@ -365,7 +354,7 @@ a:hover {
     display: table;
     margin-left: 51%;
     margin-top: -1.45rem;
-    font-style: italic;
+
 
 }
 
@@ -458,19 +447,15 @@ video {
         display: grid;
         grid-template-columns: 97.4%;
         grid-column-gap: 1.6%;
-        padding: 1rem;
-
+        padding-left: 1rem;
+        padding-right: 1rem;
         position: fixed;
     }
 
-    .head{
-
-        font-size: 1.2rem;
+    .topspacer{
+        height: 60vh;
     }
 
-    .specheader {
-        font-size: 1.2rem;
-    }
 
     .flippytext{
         position: absolute;
