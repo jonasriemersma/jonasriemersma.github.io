@@ -1,5 +1,8 @@
 /* TEXT AND MEDIA TAGS*/
 
+@font-face { font-family: "happy times at the ikob new game plus edition"; src: url('assets/happy-times-NG_regular_master_web.ttf'); } 
+@font-face { font-family: "happy times at the ikob new game plus edition"; font-style: italic; src: url('assets/happy-times-NG_italic_master_web.ttf');}
+
 * {
     font-family: "happy times at the ikob new game plus edition";
     font-size: 1.1rem;
