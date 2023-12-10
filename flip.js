@@ -49,4 +49,19 @@ function Flip2(){
 }
 }
 
+const flipboxEl3 = document.querySelectorAll('.flip-box')[3];
 
+
+console.log(flipboxEl3);
+
+function Flip3(){
+    
+    if(flipboxEl3.classList.contains("flipped")){
+    flipboxEl3.classList.toggle("flipped");
+
+    }
+    else{
+    flipboxEl3.classList.add("flipped");
+
+}
+}
