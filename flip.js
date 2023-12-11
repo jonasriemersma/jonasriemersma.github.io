@@ -1,10 +1,30 @@
 const flipboxEl = document.querySelectorAll('.flip-box')[0];
-
+let dragStartTimestamp = 0;
 
 console.log(flipboxEl);
 
+
+/* flipboxEl.addEventListener("mousedown", (event) => {
+      
+    dragStartTimestamp = event.timeStamp;
+    console.log(dragStartTimestamp)
+});
+
+flipboxEl.addEventListener("mouseup", (event) => {
+  const dragDuration = event.timeStamp - dragStartTimestamp;
+console.log(dragDuration)
+  if (dragDuration <= 100) {
+        // Navigate to the link
+        Flip(); 
+        console.log("whyyyyy")
+    }
+    else {
+        dragStartTimestamp = 0
+    }
+}); */
+
+
 function Flip(){
-    
     if(flipboxEl.classList.contains("flipped")){
     flipboxEl.classList.toggle("flipped");
 
