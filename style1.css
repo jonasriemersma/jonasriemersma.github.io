@@ -56,7 +56,7 @@ em {
 
 
 .topspacer {
-    height: 45vh;
+    height: 55vh;
 }
 
 .toptopspacer {
@@ -64,7 +64,7 @@ em {
 }
 
 .topgradient {
-    height: 25vh;
+    height: 15vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0), black);
     position: relative;
 }
