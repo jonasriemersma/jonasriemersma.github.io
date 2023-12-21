@@ -22,6 +22,10 @@
 
 }
 
+.biglink{
+    font-size: 1.4rem; line-height: 132%;
+}
+
 .bottomspacer{
     height: 25vh; position: relative;
 }
@@ -333,7 +337,7 @@ a:hover {
     text-align: left;
     grid-column-gap: 10px;
     height: 100vh;
-    width: 97%;
+    width: 96%;
     background-color: black;
     margin-bottom: -70px;
     cursor: pointer;
@@ -422,6 +426,10 @@ a:hover {
         text-decoration: none;
         font-weight: 400;
         hyphens: none;
+    }
+
+    .biglink{
+        font-size: 1.25rem; line-height: 132%;
     }
 
 
