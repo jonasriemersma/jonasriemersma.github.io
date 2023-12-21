@@ -98,12 +98,13 @@ function draw() {
 
   noStroke();
   fill(fillA, fillB, fillC);
-  textSize(23);
+  textSize(24);
  
-  textFont("happy times at the ikob new game plus edition")
+  textFont("inter")
   text("Jonas", x1, y1);
   text("Riemersma", x2, y2);
-  textSize(40);
+  textFont("happy times at the ikob new game plus edition");
+  textSize(50);
 
   text("/", x3, y3);
   text("/", x4, y4);
