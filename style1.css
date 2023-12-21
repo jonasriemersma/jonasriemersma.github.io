@@ -12,7 +12,7 @@
 }
 
 * {
-    font-family: "happy times at the ikob new game plus edition";
+    font-family: "inter";
     font-size: 1.1rem;
     line-height: 132%;
     color: white;
@@ -70,7 +70,7 @@ em {
 }
 
 h1 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-decoration: none;
     font-weight: 400;
 }
