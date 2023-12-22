@@ -12,9 +12,10 @@
 }
 
 * {
-    font-family: "inter";
+    font-family: "happy times at the ikob new game plus edition";
     font-size: 1.1rem;
-    line-height: 132%;
+    line-height: 125%;
+    font-weight: 550;
     color: white;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -23,7 +24,9 @@
 }
 
 .biglink{
-    font-size: 1.4rem; line-height: 132%;
+    font-size: 1.4rem;
+
+    
 }
 
 .bottomspacer{
@@ -76,7 +79,7 @@ em {
 h1 {
     font-size: 1.4rem;
     text-decoration: none;
-    font-weight: 400;
+
 }
 
 
@@ -514,6 +517,7 @@ a:hover {
 
     .flippytextcont {
         padding-bottom: 50px;
+        text-decoration: underline;
     }
 
     .flipped .flip-box-inner {
