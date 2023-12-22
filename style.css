@@ -1,15 +1,55 @@
 /* TEXT AND MEDIA TAGS*/
 
-* {
-    font-family: labrada, serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 131%;
-    color: black;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+@font-face {
+    font-family: "happy times at the ikob new game plus edition";
+    src: url('assets/happy-times-NG_regular_master_web.ttf');
 }
 
+@font-face {
+    font-family: "happy times at the ikob new game plus edition";
+    font-style: italic;
+    src: url('assets/happy-times-NG_italic_master_web.ttf');
+}
+
+* {
+    font-family: "inter";
+    font-size: 1.1rem;
+    line-height: 132%;
+    color: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+}
+
+.biglink{
+    font-size: 1.4rem; line-height: 132%;
+}
+
+.bottomspacer{
+    height: 25vh; position: relative;
+}
+
+.firstnamemobile{
+    display: none;
+    position:fixed;
+
+}
+
+
+body {
+    margin: 0 auto;
+    background-color: black;
+}
+
+.divider {
+    height: 10px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: -10px;
+}
 
 
 em {
@@ -18,22 +58,54 @@ em {
     text-decoration: none;
 }
 
-h2 {
-    margin-bottom: 0.2rem;
-    margin-top: 0px;
+
+.topspacer {
+    height: 55vh;
 }
 
+.toptopspacer {
+    height: 0vh;
+}
+
+.topgradient {
+    height: 15vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+    position: relative;
+}
+
+h1 {
+    font-size: 1.4rem;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+
+
 i {
+
+    font-style: italic;
+}
+
+.caption {
+    font-size: 0.95rem;
     font-style: italic;
 }
 
 video {
-    width: 100%;
+    height: 80vh;
 }
 
 img {
     width: 100%;
 }
+
+.othersideimglink {
+    margin: auto;
+    position: relative;
+    display: block;
+    width: 45%;
+}
+
 
 hr {
     border: none;
@@ -51,106 +123,45 @@ hr {
 /* LINK TAGS */
 
 a:link {
-    color: black;
+    color: white;
 
 }
 
 a:visited {
-    color: black;
+    color: white;
 }
 
 a:hover {
     color: white;
-    background-color: rgb(82, 91, 255);
+    background-color: rgb(195, 195, 195);
 
 }
-
-
-
-
-
-/* POP-OUT MENU */
-
-.details {
-    user-select: none;
-    position: relative;
-}
-
-summary {
-    display: block;
-}
-
-.summarytext {
-    cursor: pointer;
-    color: black;
-    position: relative;
-    text-decoration: underline;
-}
-
-.summarytext:hover {
-    color: white;
-    background-color: rgb(82, 91, 255);
-
-}
-
-summary::-webkit-details-marker {
-    display: none;
-}
-
-.homelink {
-    margin: 0px;
-    text-decoration: none;
-    z-index: 1;
-    position: absolute;
-}
-
-.homelink:hover {
-    text-decoration: underline;
-}
-
-.middletext {
-    text-align: center;
-}
-
-
-.aboutemailinsta {
-    text-align: right;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    position: relative;
-    top: -1.58rem;
-    z-index: 0;
-}
-
-.popouttext {
-    text-align: left;
-    margin: 3rem 7rem 3rem 7rem;
-}
-
-
 
 
 /* FLICKITY IMAGE CAROUSEL*/
 
 .gallery {
-    background: white;
+    background: black;
     font-size: 18pt;
     font-weight: 500;
-    margin-left: 0px;
+    
     margin-right: 0px;
-    width: 100vw;
+
 
     position: relative;
     max-width: 100vw;
     left: 50%;
     margin-left: -50vw;
+    margin-bottom: 4px;
+
 }
 
 .gallery-cell {
-    width: 100vw;
-    height: 100vh;
 
-    background: white;
+    height: 91.5vh;
+    margin-right: 10px;
+    width: 100%;
+    background: black;
     counter-increment: gallery-cell;
 }
 
@@ -158,15 +169,15 @@ summary::-webkit-details-marker {
     display: block;
 
     content: counter(gallery-cell);
-    line-height: 200px;
+    line-height: 0px;
     font-size: 80px;
-    color: white;
+    color: black;
 }
 
 .gallery-cell img {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
+    object-fit: scale-down;
+    position: relative;
+
     left: 0;
 
     width: 100%;
@@ -183,46 +194,40 @@ summary::-webkit-details-marker {
     height: 67.7%;
 }
 
-.textundergallery {
-    position: static;
-    margin-top: 22px;
-    margin-left: 1%;
-    margin-right: 1%;
-    z-index: 5;
-}
-
-
 
 
 /* TEXT AND IMAGE GRID */
 
 .header {
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 1.6%;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 1.7%;
+    margin-left: 0%;
+    padding-right: 1.5%;
+    margin-right: 0%;
+    margin-top: 0%;
+    height: 80%;
+    position: fixed;
 }
-
-
 
 
 
 .therest {
     display: grid;
-    grid-template-columns: 48.7% 48.7%;
-    grid-column-gap: 1.6%;
-    margin-left: 1%;
-    margin-top: 3%;
-
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: 14px;
 }
 
 .therestimg {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgba(0, 0, 0, 0);
+
+    position: relative;
+
 
 }
 
@@ -233,45 +238,169 @@ summary::-webkit-details-marker {
 
 }
 
-.therestimg span {
-    color: rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    z-index: 1;
-}
-
-.therestimg:hover span {
-    color: white;
-    background-color: rgb(82, 91, 255);
-    text-decoration: underline;
-    pointer-events: none;
-}
 
 
-.therestimglayer:hover {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-}
 
 
 .resttext {
     position: relative;
-    top: -10px;
+
 
 }
+
+/* IMAGE ZOOM */
+
+
+
+.img-zoom-lens {
+    position: absolute;
+
+    /*set the size of the lens:*/
+    width: 200px;
+    height: 200px;
+}
+
+.img-zoom-result {
+
+    /*set the size of the result div:*/
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FLIP BOX */
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: black;
+    
+    position: relative;
+    /*   perspective: 90vh; */
+
+    margin-bottom: 4vh;
+
+
+}
+
+
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipped .flip-box-inner {
+    transform: rotateX(-180deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    background: black;
+}
+
+
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: relative;
+    
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+
+}
+
+/* Style the front side */
+.flip-box-front {
+    background-color: black;
+
+    transform: rotateX(0deg);
+}
+
+/* Style the back side */
+.flip-box-back {
+    background-color: black;
+    color: white;
+    transform: rotateX(-180deg);
+
+
+}
+
+.gridcontain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    grid-column-gap: 10px;
+    height: 100vh;
+    width: 96%;
+    background-color: black;
+    margin-bottom: -70px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    margin-left: 1vw;
+}
+
+
+.flippytextcont {
+    padding: 1rem;
+    padding-left: 1vw;
+    background-color: black;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 3.5vh;
+
+
+}
+
+.flippytext {
+    position: relative;
+    display: table;
+    margin-left: 73.5%;
+    margin-top: -1.45rem;
+}
+
+.flippytext:hover {
+    background-color: rgb(195, 195, 195);
+    cursor: pointer;
+}
+
+
+.flippytextcont:hover {
+
+    cursor: pointer;
+}
+
+.flippytextB:hover {
+    background-color: rgb(195, 195, 195);
+    cursor: pointer;
+}
+
+
+
+/*SECONDARY PAGES*/
 
 .itemgrid {
     display: grid;
     grid-template-columns: 13.5% 1fr 13.5%;
     grid-column-gap: 1.6%;
     grid-row-gap: 1.6%;
-    margin-left: 1%;
+    margin-left: 1vw;
     margin-top: 1.7%;
 }
 
 .itemtitle {
     margin-bottom: 3rem;
     text-align: center;
+    font-style: italic;
+    letter-spacing: -0.2rem;
+
+
     font-size: 7rem;
     line-height: 110%;
 }
@@ -279,79 +408,120 @@ summary::-webkit-details-marker {
 .itemtitle2 {
     margin-bottom: 3rem;
     text-align: center;
+    font-style: italic;
     font-size: 4.5rem;
     line-height: 110%;
 }
 
 
 @media screen and (max-aspect-ratio: 1/1) {
+
     * {
-        font-family: labrada, serif;
-        font-size: 5vw;
-        font-weight: 400;
+        font-size: 1.1rem;
+        hyphens: auto;
     }
 
-    em {
-        font-size: 4vw;
+    h1 {
+        font-size: 1.25rem;
+        text-decoration: none;
+        font-weight: 400;
+        hyphens: none;
     }
+
+    .biglink{
+        font-size: 1.25rem; line-height: 132%;
+    }
+
+
+
+    video {
+        width: 100%;
+    }
+
+
 
     .gallery-cell {
+        max-height: 70vh;
         width: 100vw;
-        height: 45vh;
-
         background: white;
         counter-increment: gallery-cell;
+    }
 
+    .gridcontain {
+        display: grid;
+        grid-template-columns: 1fr 0px;
+        text-align: left;
+        grid-column-gap: 1.2rem;
+        margin: 1rem;
+
+        position: absolute;
+        z-index: 1;
 
     }
 
-    .textundergallery {
-        position: static;
-        margin-top: 18px;
-        margin-left: 1%;
-        margin-right: 1%;
-        z-index: 5;
+    .gallery-cell img {
+        object-fit: scale-down;
+        background-color: black;
+
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .flippytextcont {
+        padding: 1rem;
+        padding-left: 1rem;
+        background-color: black;
+        z-index: 0;
+        position: relative;
+        margin-bottom: 3.5vh;
+
+
     }
 
     .header {
         display: grid;
         grid-template-columns: 97.4%;
         grid-column-gap: 1.6%;
-        margin-left: 1%;
-        margin-top: 1.7%;
-    }
-
-    .homelink {
-        margin: 0px;
-        text-decoration: none;
-        z-index: 1;
+        padding-left: 1rem;
+        padding-right: 1rem;
         position: relative;
     }
 
-    .homelink:hover {
+    .closer {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: relative;
+    }
+
+
+
+
+
+    .flippytext {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 0px;
         text-decoration: underline;
-    }
-
-    .middletext {
-        text-align: left;
-
-        position: relative;
 
     }
 
 
-    .aboutemailinsta {
-        text-align: left;
-        grid-column: 1;
-        position: relative;
-        top: 0;
-        z-index: 0;
 
+    .flippytextcont {
+        padding-bottom: 50px;
     }
 
-    .popouttext {
-        text-align: left;
-        margin: -1rem 0rem 1.7rem 0rem;
+    .flipped .flip-box-inner {
+        transform: rotateX(-180deg);
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        background: black;
+        
     }
 
     .therest {
@@ -363,34 +533,39 @@ summary::-webkit-details-marker {
 
     }
 
-    .resttext {
+    .topspacer {
+        height: 0vh;
+    }
+
+    .toptopspacer {
+        height: 3vh;
+    }
+
+    .pfiveone {
+        display: none;
         position: relative;
-        top: 8%;
-        margin-bottom: 3%;
+        overflow:hidden;
+        width: 0px;
+        height: 0px;
 
     }
 
-    summary {
-        margin-bottom: 1.2rem;
+    .flippytext{
+        display: none;
     }
 
-    .itemgrid {
-        display: grid;
-        grid-template-columns: 0% 97.4% 0%;
-        grid-column-gap: 0%;
-        grid-row-gap: 0%;
-        margin-left: 1%;
-        margin-right: 1%;
-        margin-top: 1.7%;
+    .firstnamemobile{
+        display: block;
+        z-index: 1;
+        position: relative;
     }
 
-    .itemtitle {
-        font-size: 3.5rem;
+    .bottomspacer{
+        height: 0vh; position: relative;
     }
 
-    .itemtitle2 {
-        font-size: 2.8rem;
+    .topgradient {
+        display: none;
     }
-
 
 }
