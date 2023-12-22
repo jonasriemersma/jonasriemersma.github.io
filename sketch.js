@@ -100,7 +100,7 @@ function draw() {
   fill(fillA, fillB, fillC);
   textSize(24);
  
-  textFont("inter")
+  textFont("happy times at the ikob new game plus edition")
   text("Jonas", x1, y1);
   text("Riemersma", x2, y2);
   textFont("happy times at the ikob new game plus edition");
