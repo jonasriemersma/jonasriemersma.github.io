@@ -104,13 +104,15 @@ function draw() {
   text("Jonas", x1, y1);
   text("Riemersma", x2, y2);
   textFont("happy times at the ikob new game plus edition");
-  textSize(50);
+  textSize(24);
 
-  text("/", x3, y3);
-  text("/", x4, y4);
-  text("/", x5, y5);
-  text("/", x6, y6);
-  text("/", x7, y7);
+  
+
+  text("", x3, y3);
+  text("", x4, y4);
+  text("", x5, y5);
+  text("", x6, y6);
+  text("", x7, y7);
   
 
   textAlign(CENTER);
@@ -205,10 +207,6 @@ function draw() {
   if (y7 > 350 || y7 < 30) {
     ySpeed7 = -ySpeed7;
   }
-
-
-
-
 
 
 }
