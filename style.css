@@ -1,412 +1,603 @@
-<!DOCTYPE html>
-<html>
+/* TEXT AND MEDIA TAGS*/
+
+@font-face {
+    font-family: "happy times at the ikob new game plus edition";
+    src: url('assets/happy-times-NG_regular_master_web.ttf');
+}
+
+@font-face {
+    font-family: "happy times at the ikob new game plus edition";
+    font-style: italic;
+    src: url('assets/happy-times-NG_italic_master_web.ttf');
+}
+
+* {
+    font-family: "happy times at the ikob new game plus edition";
+    font-size: 1.1rem;
+    line-height: 125%;
+    font-weight: 550;
+    color: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 
 
+}
 
-<!--
-  WEBSITE CHECKLIST:
+.onlydesktop{
 
-VVVVVV  - UPDATE FAVICON
-  - COMPRESS IMAGES / VIDEOS
-  - ADD TEXT DESCRIPTIONS
-VVVVVV  - OPTIMIZE MOBILE VERSION
-  - make flippy backgrounds smaller
+    text-align-last: left;
+      margin-left: 0em;
+      text-indent: -1.6em;
+}
 
-
-
--->
-
-
-<head>
-  <meta name="google-site-verification" content="eVhqQLuo7KUPqfLWkec3cUNybKnpB_nRpI8jAtNG4ok" />
-  <meta name="Jonas Riemersma" content="instagram: @jonasriemersma">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <title>Jonas Riemersma</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jonas Riemersma">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="flickity.css">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
-
-</head>
-
-<script src="flickity.pkgd.js">
-</script>
-
-<body>
-  <script src="sketch.js"></script>
-
-  <div class="toptopspacer"></div>
-<div class="firstnamemobile" style="margin-bottom: -0.8rem;"></div>
-
-
-  <div class="header">
-    <div id="pfiveone">
-      <h1 class="firstnamemobile" style="text-align: justify;
-      -moz-text-align-last: justify;
-      text-align-last: justify;">Jonas Riemersma</h1>
-        <hr class="firstnamemobile" style="border: 0px solid white; background-color: white; margin-bottom: -0.35rem;">
-
-
-    </div>
-
-
-    <div>
-      <h1 class="onlydesktop">
-        . . . is a graphic designer, typography enthusiast, and prolific experimenter currently studying
-        Graphic Design (BA) at ArtEZ Arnhem. You can find me
-        on <a href="https://www.instagram.com/jonasriemersma"
-          class="biglink">Instagram</a>. Any inquiries? Send
-        me an e-mail: jonasriemersma[at]gmail.com.
-         </h1>
-         
-         <p style="font-size: 0.1rem;">&nbsp;</p>
-
-        <span><p style="font-size: 0.5rem;"></p>
-          <ul>
-            <li><a href="https://www.instagram.com/p/CzBptgJIBFm/?img_index=1"><i>How to Disappear Without a
-            Trace</i></a> book made with David Mihai at <a href="https://www.instagram.com/p/Cy838LcNcYb/">De
-          Meldkamer</a>, Maastricht / 3 &mdash; 26 November 2023&ensp;&ensp;&nbsp;)</li>
-          <li><i>marathon01</i> at <a href="https://www.instagram.com/loremipsum.expo/">Lorem
-          Ipsum</a>, Amsterdam / 16 December 2023</span>&ensp;&ensp;&nbsp;)</li>     
-          <li>Member of <a href="https://www.instagram.com/fivethirty.today/">FiveThirtyTypeClub</a> / 2023 &mdash;&ensp;&ensp;&nbsp;)</li>
-        
-        
-        </ul>
-        <br>
-
-
-
-    </div>
-  </div>
-
-
-
-  <div class="topspacer"></div>
-  <div class="topgradient"></div>
-
+ul {
+    position: relative;
+    list-style: none;
+  }
   
-  <hr class="firstnamemobile" style="border: 0px solid white; background-color: white;">
+  li::before {
+    content: '(';
+    position: absolute;
+    left: 0;
+  }
 
-  <div class="containeverything" style="background-color: black; position: relative;">
+.biglink{
+    font-size: 1.4rem;
 
+    
+}
 
+.bottomspacer{
+    height: 25vh; position: relative;
+}
 
-    <div class="flippytextcont" onclick="Flip()">Internet Censorship 2009-2023<span class="flippytext">Info</span></div>
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
+.firstnamemobile{
+    display: none;
+    position:fixed;
 
-          <div class="gallery js-flickity"
-            data-flickity='{ "wrapAround": true, "pageDots": false, "imagesLoaded": true, "pauseAutoPlayOnHover": false}'>
+}
 
-            <div class="gallery-cell" onclick="Flip()">
-              <img src="assets/internet1.jpg">
-            </div>
 
-            <div class="gallery-cell" onclick="Flip()">
-              <img src="assets/internet5.jpeg">
-            </div>
+body {
+    margin: 0 auto;
+    background-color: black;
+}
 
-            <div class="gallery-cell" onclick="Flip()">
-              <img src="assets/internet2.jpg">
-            </div>
+.divider {
+    height: 10px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: -10px;
+}
 
-            <div class="gallery-cell" onclick="Flip()">
-              <img src="assets/internet4.jpeg">
-            </div>
 
-            <div class="gallery-cell" onclick="Flip()">
-              <img src="assets/internet3.jpg">
-            </div>
+em {
+    font-size: 0.95rem;
+    font-style: normal;
+    text-decoration: none;
+}
 
 
+.topspacer {
+    height: 55vh;
+}
 
+.toptopspacer {
+    height: 0vh;
+}
 
-          </div>
-        </div>
-        <div class="flip-box-back">
+.topgradient {
+    height: 15vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+    position: relative;
+}
 
-          <div class="gridcontain" onclick="Flip()">
-            <div style="position: relative; z-index: 1;">This is a book based on a dataset about internet censorship. Every page contains an instance of a
-              country blocking a particular website, or shutting down the whole internet. The information is formatted
-              like a punch card, where the numbers form a unique pattern based on the provided data. Per case, the
-              colour of the cards is darker the longer the internet was blocked.<br><br><span class="caption">Book,
-                Digital + RISO printed, 2023</span></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
+h1 {
+    font-size: 1.4rem;
+    text-decoration: none;
 
-    <hr class="firstnamemobile" style="border: 0px solid white; background-color: white;">
+}
 
-    <div class="flippytextcont" onclick="Flip1()">Generative Letterpress<span class="flippytext">Info</span></div>
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
 
-          <div class="gallery js-flickity"
-            data-flickity='{ "wrapAround": true, "pageDots": false, "imagesLoaded": true, "pauseAutoPlayOnHover": false}'>
 
-            <div class="gallery-cell" onclick="Flip1()">
-              <img src="assets/letterpress1.jpeg">
-            </div>
+i {
 
-            <div class="gallery-cell" onclick="Flip1()">
-              <img src="assets/letterpress2.jpeg">
-            </div>
+    font-style: italic;
+}
 
-            <div class="gallery-cell" onclick="Flip1()">
-              <img src="assets/letterpress3.jpeg">
-            </div>
+.caption {
+    font-size: 0.95rem;
+    font-style: italic;
+}
 
+video {
+    height: 80vh;
+}
 
+img {
+    width: 100%;
+}
 
-          </div>
-        </div>
-        <div class="flip-box-back">
+.othersideimglink {
+    margin: auto;
+    position: relative;
+    display: block;
+    width: 45%;
+}
 
-          <div class="gridcontain" onclick="Flip1()">
-            <div style="position: relative; z-index: 1;">[info]<br><br><span class="caption">Poster grid, letterpress, 2023</span>
-            </div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <hr class="firstnamemobile" style="border: 0px solid white; background-color: white;">
+hr {
+    border: none;
+    border-top: 1px double black;
 
-    <!--    <div class="flippytextcont">Posters for De Opkamer<span class="flippytext" onclick="Flip2()">Info
-        &searr;</span></div>
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
+    background-color: black;
+    overflow: visible;
+    text-align: center;
+    height: 2px;
+}
 
-          <div class="gallery js-flickity"
-            data-flickity='{ "wrapAround": true, "pageDots": false, "imagesLoaded": true, "pauseAutoPlayOnHover": false}'>
 
-            <div class="gallery-cell" onclick="Flip2()">
-              <img src="assets/opkamer1.JPG">
-            </div>
 
-            <div class="gallery-cell" onclick="Flip2()">
-              <img src="assets/opkamer2.JPG">
-            </div>
 
+/* LINK TAGS */
 
+a:link {
+    color: white;
 
-          </div>
-        </div>
-        <div class="flip-box-back">
+}
 
-          <div class="gridcontain" onclick="Flip2()">
-            <div>[info]<br><br>Digital and RISO printed, 420 &times; 297 mm each<br><br><span class="caption">Posters,
-                2023</span></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
+a:visited {
+    color: white;
+}
 
-  -->
+a:hover {
+    color: white;
+    background-color: rgb(195, 195, 195);
 
-    <div class="flippytextcont" onclick="Flip2()">8 1/2 Dreams<span class="flippytext">Info</span>
-    </div>
+}
 
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
 
-          <div class="gallery js-flickity"
-            data-flickity='{ "wrapAround": true, "pageDots": false, "imagesLoaded": true, "pauseAutoPlayOnHover": false}'>
+/* FLICKITY IMAGE CAROUSEL*/
 
-            <div class="gallery-cell" onclick="Flip2()">
-              <img src="assets/812-1.jpg">
-            </div>
+.gallery {
+    background: black;
+    font-size: 18pt;
+    font-weight: 500;
+    
+    margin-right: 0px;
 
-            <div class="gallery-cell" onclick="Flip2()">
-              <img src="assets/812-2.jpg">
-            </div>
 
-            <div class="gallery-cell" onclick="Flip2()">
-              <img src="assets/812-3.jpg">
-            </div>
+    position: relative;
+    max-width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+    margin-bottom: 4px;
 
-            <div class="gallery-cell" onclick="Flip2()">
-              <img src="assets/812-4.jpg">
-            </div>
+}
 
-          </div>
-        </div>
-        <div class="flip-box-back">
+.gallery-cell {
 
-          <div class="gridcontain" onclick="Flip2()">
-            <div style="position: relative; z-index: 1;"> <br><br><span
-                class="caption">Book, digitally printed, 2023</span></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    height: 91.5vh;
+    margin-right: 10px;
+    width: 100%;
+    background: black;
+    counter-increment: gallery-cell;
+}
 
+.gallery-cell:before {
+    display: block;
 
-    <hr class="firstnamemobile" style="border: 0px solid white; background-color: white;">
+    content: counter(gallery-cell);
+    line-height: 0px;
+    font-size: 80px;
+    color: black;
+}
 
+.gallery-cell img {
+    object-fit: scale-down;
+    position: relative;
 
+    left: 0;
 
-    <div class="flippytextcont" onclick="Flip3()">marathon01<span class="flippytext">Info</span>
-    </div>
+    width: 100%;
+    height: 100%;
+}
 
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
+.gallery-cell video {
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
 
-          <div class="gallery js-flickity"
-            data-flickity='{ "wrapAround": true, "pageDots": false, "imagesLoaded": true, "pauseAutoPlayOnHover": false}'>
+    width: 100%;
+    height: 67.7%;
+}
 
-            <div class="gallery-cell" onclick="Flip3()">
-              <img src="assets/IMG_2936.jpeg">
-            </div>
 
-            <div class="gallery-cell" onclick="Flip3()">
-              <img src="assets/IMG_2942.jpeg">
-            </div>
 
-            <div class="gallery-cell" onclick="Flip3()">
-              <img src="assets/IMG_2937.jpeg">
-            </div>
+/* TEXT AND IMAGE GRID */
 
-            <div class="gallery-cell" onclick="Flip3()">
-              <img src="assets/IMG_2939.jpeg">
-            </div>
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.6%;
+    margin-left: 0%;
+    padding-right: 1.5%;
+    margin-right: 0%;
+    margin-top: 0%;
+    height: 80%;
+    position: fixed;
+}
 
-          </div>
-        </div>
-        <div class="flip-box-back">
 
-          <div class="gridcontain" onclick="Flip3()">
-            <div style="position: relative; z-index: 1;">Pens always run out of ink, and spray cans always run out of paint. This series of pen-plotted images
-              is focused on urban surfaces, their textures and markings, and their continuously changing appearance
-              caused by human intervention.<br><br><span
-                class="caption">Series of prints, pen plotted, 2023</span></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-
-    <!--   <div class="flippytextcont" >Into Orbit<span class="flippytext" onclick="Flip2()">Info &searr;</span>
-    </div>
-
-
-    <div class="flip-box">
-      <div class="flip-box-inner">
-        <div class="flip-box-front">
-
-          <video autoplay muted loop disablePictureInPicture playsinline>
-            <source src="assets/nasabook2.mp4">
-        </div>
-        <div class="flip-box-back">
-
-          <div class="gridcontain">
-            <div>This book contains raw, unedited photos of our galaxy from the Hubble Space Telescope. It was created
-              using the photo archives of NASA and STScI.
-              <br><br>
-              <span class="caption"> Book, self-published, 2022</span>
-            </div>
-            <div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      -->
-
-
-
-</div>
-
-
-
-
-
-
-
-
-    <script src="flip.js"></script>
-    <script>function imageZoom(imgID, resultID) {
-        var img, lens, result, cx, cy;
-        img = document.getElementById(imgID);
-        result = document.getElementById(resultID);
-        /* Create lens: */
-        lens = document.createElement("DIV");
-        lens.setAttribute("class", "img-zoom-lens");
-        /* Insert lens: */
-        img.parentElement.insertBefore(lens, img);
-        /* Calculate the ratio between result DIV and lens: */
-        cx = result.offsetWidth / lens.offsetWidth;
-        cy = result.offsetHeight / lens.offsetHeight;
-        /* Set background properties for the result DIV */
-        result.style.backgroundImage = "url('" + img.src + "')";
-        result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
-        /* Execute a function when someone moves the cursor over the image, or the lens: */
-        lens.addEventListener("mousemove", moveLens);
-        img.addEventListener("mousemove", moveLens);
-        /* And also for touch screens: */
-        lens.addEventListener("touchmove", moveLens);
-        img.addEventListener("touchmove", moveLens);
-        function moveLens(e) {
-          var pos, x, y;
-          /* Prevent any other actions that may occur when moving over the image */
-          e.preventDefault();
-          /* Get the cursor's x and y positions: */
-          pos = getCursorPos(e);
-          /* Calculate the position of the lens: */
-          x = pos.x - (lens.offsetWidth / 2);
-          y = pos.y - (lens.offsetHeight / 2);
-          /* Prevent the lens from being positioned outside the image: */
-          if (x > img.width - lens.offsetWidth) { x = img.width - lens.offsetWidth; }
-          if (x < 0) { x = 0; }
-          if (y > img.height - lens.offsetHeight) { y = img.height - lens.offsetHeight; }
-          if (y < 0) { y = 0; }
-          /* Set the position of the lens: */
-          lens.style.left = x + "px";
-          lens.style.top = y + "px";
-          /* Display what the lens "sees": */
-          result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
-        }
-        function getCursorPos(e) {
-          var a, x = 0, y = 0;
-          e = e || window.event;
-          /* Get the x and y positions of the image: */
-          a = img.getBoundingClientRect();
-          /* Calculate the cursor's x and y coordinates, relative to the image: */
-          x = e.pageX - a.left;
-          y = e.pageY - a.top;
-          /* Consider any page scrolling: */
-          x = x - window.pageXOffset;
-          y = y - window.pageYOffset;
-          return { x: x, y: y };
-        }
-      } </script>
-
-    <script>
-      imageZoom("myimage", "myresult");
-    </script>
-</body>
-
-</html>
+
+.therest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.therestimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+
+}
+
+.therestimg:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.resttext {
+    position: relative;
+
+
+}
+
+/* IMAGE ZOOM */
+
+
+
+.img-zoom-lens {
+    position: absolute;
+
+    /*set the size of the lens:*/
+    width: 200px;
+    height: 200px;
+}
+
+.img-zoom-result {
+
+    /*set the size of the result div:*/
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FLIP BOX */
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: black;
+    
+    position: relative;
+    /*   perspective: 90vh; */
+
+    margin-bottom: 4vh;
+
+
+}
+
+
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipped .flip-box-inner {
+    transform: rotateX(-180deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: relative;
+    
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+
+}
+
+/* Style the front side */
+.flip-box-front {
+    background-color: black;
+
+    transform: rotateX(0deg);
+}
+
+/* Style the back side */
+.flip-box-back {
+
+    color: white;
+    transform: rotateX(-180deg);
+
+
+}
+
+.gridcontain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    grid-column-gap: 10px;
+    height: 100vh;
+    width: 96%;
+
+    margin-bottom: -70px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1;
+    margin-left: 1vw;
+}
+
+
+.flippytextcont {
+    padding: 1rem;
+    padding-left: 1vw;
+    background-color: black;
+    z-index: 0;
+    position: relative;
+    margin-bottom: 3.5vh;
+
+
+}
+
+.flippytext {
+    position: relative;
+    display: table;
+    margin-left: 73.5%;
+    margin-top: -1.45rem;
+}
+
+.flippytext:hover {
+    background-color: rgb(195, 195, 195);
+    cursor: pointer;
+}
+
+
+.flippytextcont:hover {
+
+    cursor: pointer;
+}
+
+.flippytextB:hover {
+    background-color: rgb(195, 195, 195);
+    cursor: pointer;
+}
+
+
+
+/*SECONDARY PAGES*/
+
+.itemgrid {
+    display: grid;
+    grid-template-columns: 13.5% 1fr 13.5%;
+    grid-column-gap: 1.6%;
+    grid-row-gap: 1.6%;
+    margin-left: 1vw;
+    margin-top: 1.7%;
+}
+
+.itemtitle {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: -0.2rem;
+
+
+    font-size: 7rem;
+    line-height: 110%;
+}
+
+.itemtitle2 {
+    margin-bottom: 3rem;
+    text-align: center;
+    font-style: italic;
+    font-size: 4.5rem;
+    line-height: 110%;
+}
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+    * {
+        font-size: 1.1rem;
+        hyphens: auto;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+        text-decoration: none;
+        font-weight: 400;
+        hyphens: none;
+    }
+
+    .biglink{
+        font-size: 1.25rem; line-height: 132%;
+    }
+
+
+
+    video {
+        width: 100%;
+    }
+
+
+
+    .gallery-cell {
+        max-height: 70vh;
+        width: 100vw;
+        background: white;
+        counter-increment: gallery-cell;
+    }
+
+    .gridcontain {
+        display: grid;
+        grid-template-columns: 1fr 0px;
+        text-align: left;
+        grid-column-gap: 1.2rem;
+        margin: 1rem;
+
+        position: absolute;
+
+    }
+
+    .gallery-cell img {
+        object-fit: scale-down;
+        background-color: black;
+
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .flippytextcont {
+        padding: 1rem;
+        padding-left: 1rem;
+        background-color: black;
+        z-index: 0;
+        position: relative;
+        margin-bottom: 3.5vh;
+
+
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: relative;
+    }
+
+    .closer {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: relative;
+    }
+
+
+
+
+
+    .flippytext {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 0px;
+        text-decoration: underline;
+
+    }
+
+
+
+    .flippytextcont {
+        padding-bottom: 50px;
+        text-decoration: underline;
+    }
+
+    .flipped .flip-box-inner {
+        transform: rotateX(-180deg);
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+
+        
+    }
+
+    .therest {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        margin-left: 1%;
+        margin-top: 8%;
+
+    }
+
+    .topspacer {
+        height: 0vh;
+    }
+
+    .toptopspacer {
+        height: 3vh;
+    }
+
+    .pfiveone {
+        display: none;
+        position: relative;
+        overflow:hidden;
+        width: 0px;
+        height: 0px;
+
+    }
+
+    .flippytext{
+        display: none;
+    }
+
+    .firstnamemobile{
+        display: block;
+        z-index: 1;
+        position: relative;
+    }
+
+    .bottomspacer{
+        height: 0vh; position: relative;
+    }
+
+    .topgradient {
+        display: none;
+    }
+
+    .onlydesktop{
+
+        text-align-last: left;
+          margin-left: 0em;
+          text-indent: 0em;
+    }
+
+    .containeverything{
+        width: 98%;
+    }
+
+}
