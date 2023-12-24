@@ -23,6 +23,24 @@
 
 }
 
+.onlydesktop{
+
+    text-align-last: left;
+      margin-left: 0em;
+      text-indent: -1.6em;
+}
+
+ul {
+    position: relative;
+    list-style: none;
+  }
+  
+  li::before {
+    content: '(';
+    position: absolute;
+    left: 0;
+  }
+
 .biglink{
     font-size: 1.4rem;
 
@@ -569,6 +587,13 @@ a:hover {
 
     .topgradient {
         display: none;
+    }
+
+    .onlydesktop{
+
+        text-align-last: left;
+          margin-left: 0em;
+          text-indent: 0em;
     }
 
 }
