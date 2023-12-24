@@ -27,10 +27,14 @@ console.log(dragDuration)
 function Flip(){
     if(flipboxEl.classList.contains("flipped")){
     flipboxEl.classList.toggle("flipped");
+    
 
     }
     else{
     flipboxEl.classList.add("flipped");
+    flipboxEl1.classList.remove("flipped");
+    flipboxEl2.classList.remove("flipped");
+    flipboxEl3.classList.remove("flipped");
 
 }
 }
@@ -47,7 +51,10 @@ function Flip1(){
 
     }
     else{
-    flipboxEl1.classList.add("flipped");
+        flipboxEl.classList.remove("flipped");
+        flipboxEl1.classList.add("flipped");
+        flipboxEl2.classList.remove("flipped");
+        flipboxEl3.classList.remove("flipped");
 
 }
 }
@@ -64,7 +71,11 @@ function Flip2(){
 
     }
     else{
-    flipboxEl2.classList.add("flipped");
+        flipboxEl.classList.remove("flipped");
+        flipboxEl1.classList.remove("flipped");
+        flipboxEl2.classList.add("flipped");
+        flipboxEl3.classList.remove("flipped");
+    
 
 }
 }
@@ -81,6 +92,9 @@ function Flip3(){
 
     }
     else{
+    flipboxEl.classList.remove("flipped");
+    flipboxEl1.classList.remove("flipped");
+    flipboxEl2.classList.remove("flipped");
     flipboxEl3.classList.add("flipped");
 
 }
