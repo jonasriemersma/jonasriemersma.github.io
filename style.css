@@ -23,11 +23,19 @@
 
 }
 
+
+.containeverything{
+    background-color: black; 
+    position: relative;
+}
+
 .onlydesktop{
 
     text-align-last: left;
-      margin-left: 0em;
+      margin-right: 0em;
       text-indent: -1.6em;
+      margin-right: -10px;
+      position: relative;
 }
 
 ul {
@@ -373,6 +381,7 @@ a:hover {
     padding-left: 1vw;
     background-color: black;
     z-index: 0;
+    width: 99%;
     position: relative;
     margin-bottom: 3.5vh;
 
