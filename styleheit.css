@@ -349,10 +349,10 @@ input[type=submit] {
         display: block;
         position: relative;
         background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(94,94,255,1) 100%, rgba(94,94,255,1) 100%, rgba(255,255,255,0) 100%);
-        padding-left: 11%;
-        padding-right: 11%;
-        padding-top: 5%;
-        padding-bottom: 11%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1%;
+        padding-bottom: 5%;
         margin-bottom: 5%;
         font-size: 1.5rem;
     }
