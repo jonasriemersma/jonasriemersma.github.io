@@ -10,8 +10,16 @@ b {
     font-weight: bold;
 }
 
+.toptextdesktop{
+    display: block;
+}
+
 i {
     font-style: italic;
+}
+
+.toptextmobile {
+    display: none;
 }
 
 .mobilefiller{
@@ -294,49 +302,6 @@ input[type=submit] {
         height: 10vh;
     }
 
-    .topnav {
-        overflow: hidden;
-        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(94,94,255,1) 100%, rgba(94,94,255,1) 100%, rgba(255,255,255,0) 100%);
-        position: relative;
-      }
-      
-      /* Hide the links inside the navigation menu (except for logo/home) */
-      .topnav #myLinks {
-        display: none;
-        text-align: center;
-      }
-      
-      /* Style navigation menu links */
-      .topnav a {
-        color: black;
-        padding: 1rem 1rem;
-        text-decoration: none;
- 
-        display: block;
-      }
-      
-      /* Style the hamburger menu */
-      .topnav a.icon {
-
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-   
-      }
-      
-      /* Add a grey background color on mouse-over */
-      .topnav a:hover {
-   
-        color: black;
-      }
-      
-      /* Style the active link (or home/logo) */
-      .active {
-   
-        color: black;
-      }
-
       .firstparagraph {
         display: block;
 
@@ -374,5 +339,21 @@ input[type=submit] {
         margin-right: auto;
         margin-top: 2.3rem;
         margin-bottom: 2.3rem;
+    }
+
+    .toptextdesktop{
+        display: none;
+    }
+
+    .toptextmobile{
+        display: block;
+        position: relative;
+        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(94,94,255,1) 100%, rgba(94,94,255,1) 100%, rgba(255,255,255,0) 100%);
+        padding-left: 11%;
+        padding-right: 11%;
+        padding-top: 5%;
+        padding-bottom: 11%;
+        margin-bottom: 5%;
+        font-size: 1.5rem;
     }
 }
