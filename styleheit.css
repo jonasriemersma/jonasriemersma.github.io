@@ -1,0 +1,370 @@
+* {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    stroke: none;
+
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+.mobilefiller{
+    position: relative;
+    height: 0vh;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    display: none;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: none;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    display:none;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    display: none;
+  }
+
+p {
+    z-index: 1;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+video {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -7rem;
+    margin-bottom: -10rem;
+    z-index: -2;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+
+}
+
+.toptext {
+    margin: 1rem;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    display: grid;
+    color: white;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    line-height: 125%;
+
+}
+
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    grid-column-gap: 1vw;
+    margin: 1vw;
+
+}
+
+.testimelement {
+    padding: 1vw;
+
+}
+
+.firstparagraph {
+    display: block;
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 68%;
+    margin-top: -1.15rem;
+    margin-bottom: 2.3rem;
+}
+
+.paragraph {
+    display: block;
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.3rem;
+    margin-bottom: 2.3rem;
+    z-index: 1;
+}
+
+.paragraphsecondary {
+    display: block;
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6rem;
+    margin-bottom: 2.3rem;
+    z-index: 1;
+}
+
+.ervaringen {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.3rem;
+    margin-bottom: 2.3rem;
+}
+
+.vertline {
+    width: 2px;
+    background-color: white;
+}
+
+.header {
+    font-size: 7vw;
+    color: white;
+    font-style: italic;
+    position: relative;
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    filter: drop-shadow(3px 3px 0.65rem rgba(0,0,0,0.8));
+
+    z-index: 1;
+}
+
+.header2 {
+    font-size: 8.25vw;
+    color: black;
+    font-style: italic;
+    position: relative;
+    margin: 0;
+
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+
+
+    z-index: 1;
+}
+
+.header3 {
+    font-size: 2.3rem;
+    line-height: 110%;
+
+    font-style: italic;
+    position: relative;
+    margin: 0;
+    font-family: DM Sans, sans-serif;
+    z-index: 1;
+}
+
+
+#svganim1 {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    left: -40vw;
+    top: -25vw;
+    margin-top: 8.9rem;
+    position: absolute;
+    width: 190%;
+    z-index: 0;
+
+}
+
+.inlineimage{
+    width: 68%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: block;
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    /* Full width */
+    padding: 12px;
+    /* Some padding */
+    border: 1px solid black;
+    /* Gray border */
+    border-radius: 3px;
+    /* Rounded borders */
+    box-sizing: border-box;
+    /* Make sure that padding and width stays in place */
+    margin-top: 6px;
+    /* Add a top margin */
+    margin-bottom: 16px;
+    /* Bottom margin */
+    resize: vertical
+        /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+
+
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+
+
+/* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 20px;
+}
+
+.carousel-cell {
+    height: 300px;
+    overflow: auto;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .frontpagevideo{
+        display: none;
+    }
+
+    .toptext {
+        display: none;
+    
+    }
+
+    .svganim1{
+        visibility: hidden;
+        position:absolute;
+        height: 0;
+    }
+
+    .mobilefiller{
+        position: relative;
+        height: 10vh;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(94,94,255,1) 100%, rgba(94,94,255,1) 100%, rgba(255,255,255,0) 100%);
+        position: relative;
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+        text-align: center;
+      }
+      
+      /* Style navigation menu links */
+      .topnav a {
+        color: black;
+        padding: 1rem 1rem;
+        text-decoration: none;
+ 
+        display: block;
+      }
+      
+      /* Style the hamburger menu */
+      .topnav a.icon {
+
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+   
+      }
+      
+      /* Add a grey background color on mouse-over */
+      .topnav a:hover {
+   
+        color: black;
+      }
+      
+      /* Style the active link (or home/logo) */
+      .active {
+   
+        color: black;
+      }
+
+      .firstparagraph {
+        display: block;
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 78%;
+        margin-top: -1.15rem;
+        margin-bottom: 2.3rem;
+    }
+    
+    .paragraph {
+        display: block;
+        width: 78%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.3rem;
+        margin-bottom: 2.3rem;
+        z-index: 1;
+    }
+    
+    .paragraphsecondary {
+        display: block;
+        width: 78%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 6rem;
+        margin-bottom: 2.3rem;
+        z-index: 1;
+    }
+    
+    .ervaringen {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.3rem;
+        margin-bottom: 2.3rem;
+    }
+}
