@@ -40,6 +40,14 @@
       position: relative;
 }
 
+.showonlydesktop {
+    display: inline;
+}
+
+.showonlymobile {
+    display: none;
+}
+
 ul {
     position: relative;
     list-style: none;
@@ -575,6 +583,14 @@ a:hover {
         text-align-last: left;
           margin-left: 0em;
           text-indent: 0em;
+    }
+
+    .showonlydesktop {
+        display: none;
+    }
+
+    .showonlymobile {
+        display: inline;
     }
 
     .containeverything{
