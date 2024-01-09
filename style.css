@@ -57,9 +57,11 @@ ul {
     content: '\2192';
     position: absolute;
     left: 0;
-    font-size: 1.3rem;
+
 
   }
+
+
 
 .biglink{
     font-size: 1.4rem;
