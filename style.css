@@ -24,24 +24,43 @@
 
 }
 
+.endthing {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.6%;
+    margin-left: 0%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin-right: 0%;
+    margin-top: 0%;
+}
 
-.containeverything{
-    background-color: black; 
+.endthing1 {
+    text-align: left;
+}
+
+.endthing2 {
+    text-align: right;
+}
+
+.containeverything {
+    background-color: black;
     position: relative;
     overflow: hidden;
 }
 
-.onlydesktop{
+.onlydesktop {
 
     text-align-last: left;
-      margin-right: 0em;
-      text-indent: -1.6em;
-      margin-right: -10px;
-      position: relative;
+    margin-right: 0em;
+    text-indent: -1.6em;
+    margin-right: -10px;
+    position: relative;
 }
 
 .showonlydesktop {
-    display: inline;
+    display: block;
 }
 
 .showonlymobile {
@@ -51,31 +70,33 @@
 ul {
     position: relative;
     list-style: none;
-  }
-  
-  li::before {
+    
+}
+
+li::before {
     content: '\2192';
     position: absolute;
     left: 0;
 
 
-  }
+}
 
 
 
-.biglink{
+.biglink {
     font-size: 1.4rem;
 
-    
+
 }
 
-.bottomspacer{
-    height: 25vh; position: relative;
+.bottomspacer {
+    height: 25vh;
+    position: relative;
 }
 
-.firstnamemobile{
+.firstnamemobile {
     display: none;
-    position:fixed;
+    position: fixed;
 
 }
 
@@ -186,7 +207,7 @@ a:hover {
     background: black;
     font-size: 18pt;
     font-weight: 500;
-    
+
     margin-right: 0px;
 
 
@@ -246,11 +267,20 @@ a:hover {
     grid-column-gap: 1.6%;
     margin-left: 0%;
     padding-right: 1.5%;
+    padding-left: 1.5%;
     margin-right: 0%;
     margin-top: 0%;
     height: 80%;
     position: fixed;
 }
+
+details summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details>summary {
+        list-style: none;
+    }
 
 
 
@@ -315,7 +345,7 @@ a:hover {
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
     background-color: black;
-    
+
     position: relative;
     /*   perspective: 90vh; */
 
@@ -350,7 +380,7 @@ a:hover {
 .flip-box-front,
 .flip-box-back {
     position: relative;
-    
+
     -webkit-backface-visibility: hidden;
     /* Safari */
     backface-visibility: hidden;
@@ -434,12 +464,12 @@ a:hover {
     }
 
     details summary::-webkit-details-marker {
-        display:none;
-      }
+        display: none;
+    }
 
-      details > summary {
+    details>summary {
         list-style: none;
-      }
+    }
 
     h1 {
         font-size: 1.25rem;
@@ -448,8 +478,9 @@ a:hover {
         hyphens: none;
     }
 
-    .biglink{
-        font-size: 1.25rem; line-height: 132%;
+    .biglink {
+        font-size: 1.25rem;
+        line-height: 132%;
     }
 
 
@@ -457,11 +488,12 @@ a:hover {
     video {
         width: 100%;
     }
-.gallery{   
-    margin-right: 0px;
-    position: relative;
-    max-width: 100vw;
-}
+
+    .gallery {
+        margin-right: 0px;
+        position: relative;
+        max-width: 100vw;
+    }
 
     .gallery-cell {
         max-height: 70vh;
@@ -544,7 +576,7 @@ a:hover {
         transition: transform 0.8s;
         transform-style: preserve-3d;
 
-        
+
     }
 
     .therest {
@@ -565,35 +597,36 @@ a:hover {
     .pfiveone {
         display: none;
         position: relative;
-        overflow:hidden;
+        overflow: hidden;
         width: 0px;
         height: 0px;
 
     }
 
-    .flippytext{
+    .flippytext {
         display: none;
     }
 
-    .firstnamemobile{
+    .firstnamemobile {
         display: block;
         z-index: 1;
         position: relative;
     }
 
-    .bottomspacer{
-        height: 0vh; position: relative;
+    .bottomspacer {
+        height: 0vh;
+        position: relative;
     }
 
     .topgradient {
         display: none;
     }
 
-    .onlydesktop{
+    .onlydesktop {
 
         text-align-last: left;
-          margin-left: 0em;
-          text-indent: 0em;
+        margin-left: 0em;
+        text-indent: 0em;
     }
 
     .showonlydesktop {
@@ -604,7 +637,7 @@ a:hover {
         display: inline;
     }
 
-    .containeverything{
+    .containeverything {
         width: 100%;
     }
 
@@ -613,4 +646,22 @@ a:hover {
         font-style: italic;
     }
 
+    .endthing {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1.6%;
+        margin-left: 0%;
+        padding-right: 1.5%;
+        margin-right: 0%;
+        margin-top: 0%;
+    }
+
+    .endthing1 {
+        text-align: center;
+    }
+
+    .endthing2 {
+        text-align: center;
+    }
 }
