@@ -44,6 +44,15 @@
     text-align: right;
 }
 
+.aboutthing:hover{
+    background-color: rgb(195, 195, 195);
+    
+}
+
+.aboutthing{
+    font-size: 1.35rem;
+}
+
 .containeverything {
     background-color: black;
     position: relative;
@@ -52,10 +61,7 @@
 
 .onlydesktop {
 
-    text-align-last: left;
-    margin-right: 0em;
-    text-indent: -1.6em;
-    margin-right: -10px;
+ 
     position: relative;
 }
 
@@ -137,7 +143,7 @@ em {
 }
 
 h1 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     text-decoration: none;
 
 }
@@ -263,14 +269,15 @@ a:hover {
 
 .header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1.6%;
+    grid-template-columns: 20% 1fr;
+    grid-column-gap: 1.5%;
     margin-left: 0%;
     padding-right: 1.5%;
     padding-left: 1.5%;
     margin-right: 0%;
     margin-top: 0%;
     height: 80%;
+    width: 100%;
     position: fixed;
 }
 
