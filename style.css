@@ -132,7 +132,7 @@ em {
 
 
 .topspacer {
-    height: 55vh;
+    height: 65vh;
 }
 
 
@@ -515,7 +515,10 @@ details summary::-webkit-details-marker {
         grid-template-columns: 1fr 0px;
         text-align: left;
         grid-column-gap: 1.2rem;
-        margin: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -2.5rem;
 
         position: absolute;
 
