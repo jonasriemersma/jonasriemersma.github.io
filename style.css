@@ -11,10 +11,15 @@
     src: url('assets/happy-times-NG_italic_master_web.ttf');
 }
 
+@font-face {
+    font-family: "bianzhidai";
+    src: url('assets/bianzhidai-Pearl.otf');
+}
+
 
 
 * {
-    font-family: "happy times at the ikob new game plus edition";
+    font-family: "arial";
     font-size: 1.1rem;
     line-height: 125%;
     font-weight: 400;
@@ -24,6 +29,51 @@
 
 
 
+}
+
+.aboutlink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.aboutlink:hover{
+    background-color: rgb(195, 195, 195);
+}
+
+.headeronlydesktop {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    text-align: center;
+    height: 1vw;
+    z-index: -2;
+}
+
+.desktopheadercontainer {
+    display: grid;
+    z-index: -2;
+    margin-left: 0%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin-right: 0%;
+    margin-top: 0%;
+    height: 80%;
+    width: 100%;
+    position: fixed;
+}
+
+
+h5 {
+    font-size: 4vw;
+    margin-top: 20px;
+    font-family: bianzhidai;
+}
+
+h6 {
+    font-size: 8vw;
+    margin-top: 20px;
+    font-family: bianzhidai;
 }
 
 .endthing {
@@ -36,7 +86,7 @@
     padding-left: 1.5%;
     margin-right: 0%;
     margin-top: 0%;
-    
+
 }
 
 .endthing1 {
@@ -47,24 +97,17 @@
     text-align: right;
 }
 
-.aboutthing:hover{
-    background-color: rgb(195, 195, 195);
-    
-}
-
-.aboutthing{
-    font-size: 1.35rem;
-}
-
 .containeverything {
     background-color: black;
     position: relative;
     overflow: hidden;
+    z-index: 3;
+
 }
 
 .onlydesktop {
 
- 
+
     position: relative;
 }
 
@@ -79,7 +122,7 @@
 ul {
     position: relative;
     list-style: none;
-    
+
 }
 
 li::before {
@@ -148,6 +191,7 @@ em {
 h1 {
     font-size: 1.35rem;
     text-decoration: none;
+
 
 }
 
@@ -221,11 +265,14 @@ a:hover {
 
 
     position: relative;
+
+
+    /*
     max-width: 98vw;
     left: 50%;
     margin-left: -50vw;
     margin-bottom: 4px;
-
+*/
 }
 
 .gallery-cell {
@@ -285,12 +332,12 @@ a:hover {
 }
 
 details summary::-webkit-details-marker {
-        display: none;
-    }
+    display: none;
+}
 
-    details>summary {
-        list-style: none;
-    }
+details>summary {
+    list-style: none;
+}
 
 
 
@@ -424,16 +471,16 @@ details summary::-webkit-details-marker {
     margin-bottom: -70px;
     cursor: pointer;
     position: fixed;
-    z-index: 1;
-    margin-left: 1vw;
+    z-index: 2;
+    margin-left: 2vw;
 }
 
 
 .flippytextcont {
     padding: 1rem;
-    padding-left: 1vw;
+    padding-left: 2vw;
     background-color: black;
-    z-index: 0;
+
     width: 99%;
     position: relative;
     margin-bottom: 3.5vh;
@@ -581,7 +628,7 @@ details summary::-webkit-details-marker {
 
     .flippytextcont {
         padding-bottom: 50px;
-   
+
     }
 
     .flipped .flip-box-inner {
@@ -622,7 +669,7 @@ details summary::-webkit-details-marker {
 
     .firstnamemobile {
         display: block;
-        z-index: 1;
+        z-index: 2;
         position: relative;
     }
 
@@ -677,4 +724,13 @@ details summary::-webkit-details-marker {
     .endthing2 {
         text-align: center;
     }
+
+    .headeronlydesktop {
+        display: none;
+    }
+
+    .desktopheadercontainer {
+        display: none;
+    }
+
 }
