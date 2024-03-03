@@ -19,7 +19,7 @@
 
 
 * {
-    font-family: "arial";
+    font-family: "happy times at the ikob new game plus edition";
     font-size: 1.1rem;
     line-height: 125%;
     font-weight: 400;
@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 
-.aboutlink:hover{
+.aboutlink:hover {
     background-color: rgb(195, 195, 195);
 }
 
@@ -64,15 +64,25 @@
 }
 
 
-h5 {
-    font-size: 4vw;
-    margin-top: 20px;
-    font-family: bianzhidai;
+.headeronlymobile {
+    display: none;
 }
+
+.mobileheadercontainer {
+    display: none;
+}
+
+
 
 h6 {
     font-size: 8vw;
     margin-top: 20px;
+    font-family: bianzhidai;
+}
+
+h4 {
+    font-size: 10vw;
+
     font-family: bianzhidai;
 }
 
@@ -555,7 +565,7 @@ details>summary {
     .gallery-cell {
         max-height: 70vh;
         width: 100vw;
-        background: white;
+
         counter-increment: gallery-cell;
     }
 
@@ -731,6 +741,29 @@ details>summary {
 
     .desktopheadercontainer {
         display: none;
+    }
+
+
+    .headeronlymobile {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        text-align: left;
+        height: 1vw;
+
+    }
+
+    .mobileheadercontainer {
+        display: grid;
+
+        margin-left: 0%;
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+        margin-right: 0%;
+        margin-top: 0%;
+
+        position: relative;
     }
 
 }
