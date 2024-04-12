@@ -31,6 +31,18 @@
 
 }
 
+
+.aboutbit {
+    text-decoration: underline;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.aboutbit:hover {
+    background-color: rgb(195, 195, 195);
+}
+
+
 .aboutlink {
     text-decoration: underline;
     cursor: pointer;
@@ -53,14 +65,15 @@
 .desktopheadercontainer {
     display: grid;
     z-index: -2;
-    margin-left: 0%;
+    margin-left: -0.7%;
     padding-right: 1.5%;
     padding-left: 1.5%;
     margin-right: 0%;
     margin-top: 0%;
     height: 80%;
     width: 100%;
-    position: fixed;
+    position: absolute;
+    overflow: hidden;
 }
 
 
@@ -240,7 +253,7 @@ hr {
     background-color: black;
     overflow: visible;
     text-align: center;
-    height: 2px;
+    height: 1px;
 }
 
 
@@ -415,8 +428,9 @@ details>summary {
 
     position: relative;
     /*   perspective: 90vh; */
-
-    margin-bottom: 4vh;
+    overflow: hidden;
+    padding-bottom: 4vh;
+    margin-bottom: 6vh;
 
 
 }
@@ -483,31 +497,40 @@ details>summary {
     position: fixed;
     z-index: 2;
     margin-left: 2vw;
+    
 }
 
 
 .flippytextcont {
     padding: 1rem;
     padding-left: 2vw;
-    background-color: black;
 
-    width: 99%;
+    z-index: 1;
+    width: 100%;
     position: relative;
     margin-bottom: 3.5vh;
+    text-align: left;
+
+
 
 
 }
 
 .flippytext {
     position: relative;
-    display: table;
-    margin-left: 73.5%;
+    display: block;
+    margin-right: 1%;
+    text-align: right;
     margin-top: -1.45rem;
+
+
+
 }
 
 .flippytext:hover {
-    background-color: rgb(195, 195, 195);
     cursor: pointer;
+    
+
 }
 
 
@@ -579,6 +602,7 @@ details>summary {
         margin-bottom: 1rem;
         margin-top: -2.5rem;
 
+
         position: absolute;
 
     }
@@ -638,7 +662,13 @@ details>summary {
 
     .flippytextcont {
         padding-bottom: 50px;
+        position: relative !important;
 
+    }
+
+    .flip-box {
+        padding-bottom: 0vh;
+        margin-bottom: 4vh;
     }
 
     .flipped .flip-box-inner {
