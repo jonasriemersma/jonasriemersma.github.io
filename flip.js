@@ -40,6 +40,8 @@ function Flip() {
         flipboxEl6.classList.remove("flipped");
         flipboxEl7.classList.remove("flipped");
         flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
     }
 }
 
@@ -64,6 +66,8 @@ function Flip1() {
         flipboxEl6.classList.remove("flipped");
         flipboxEl7.classList.remove("flipped");
         flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
     }
 }
 
@@ -88,6 +92,8 @@ function Flip2() {
         flipboxEl6.classList.remove("flipped");
         flipboxEl7.classList.remove("flipped");
         flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
 
     }
 }
@@ -113,6 +119,8 @@ function Flip3() {
         flipboxEl6.classList.remove("flipped");
         flipboxEl7.classList.remove("flipped");
         flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
     }
 }
 
@@ -136,6 +144,8 @@ function Flip4() {
         flipboxEl6.classList.remove("flipped");
         flipboxEl7.classList.remove("flipped");
         flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
 
     }
 }
@@ -160,6 +170,8 @@ function Flip5() {
         flipboxEl6.classList.remove("flipped");
         flipboxEl7.classList.remove("flipped");
         flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
 
     }
 }
@@ -184,6 +196,8 @@ function Flip6() {
         flipboxEl6.classList.add("flipped");
         flipboxEl7.classList.remove("flipped");
         flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
 
     }
 }
@@ -209,6 +223,8 @@ function Flip7() {
         flipboxEl6.classList.remove("flipped");
         flipboxEl7.classList.add("flipped");
         flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
 
     }
 }
@@ -234,7 +250,60 @@ function Flip8() {
         flipboxEl6.classList.remove("flipped");
         flipboxEl7.classList.remove("flipped");
         flipboxEl8.classList.add("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
 
     }
 }
 
+const flipboxEl9 = document.querySelectorAll('.flip-box')[9];
+
+console.log(flipboxEl9);
+
+function Flip9() {
+
+    if (flipboxEl9.classList.contains("flipped")) {
+        flipboxEl9.classList.toggle("flipped");
+
+    }
+    else {
+        flipboxEl.classList.remove("flipped");
+        flipboxEl1.classList.remove("flipped");
+        flipboxEl2.classList.remove("flipped");
+        flipboxEl3.classList.remove("flipped");
+        flipboxEl4.classList.remove("flipped");
+        flipboxEl5.classList.remove("flipped");
+        flipboxEl6.classList.remove("flipped");
+        flipboxEl7.classList.remove("flipped");
+        flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.add("flipped");
+        flipboxEl10.classList.remove("flipped");
+
+    }
+}
+
+const flipboxEl10 = document.querySelectorAll('.flip-box')[10];
+
+console.log(flipboxEl10);
+
+function Flip10() {
+
+    if (flipboxEl10.classList.contains("flipped")) {
+        flipboxEl10.classList.toggle("flipped");
+
+    }
+    else {
+        flipboxEl.classList.remove("flipped");
+        flipboxEl1.classList.remove("flipped");
+        flipboxEl2.classList.remove("flipped");
+        flipboxEl3.classList.remove("flipped");
+        flipboxEl4.classList.remove("flipped");
+        flipboxEl5.classList.remove("flipped");
+        flipboxEl6.classList.remove("flipped");
+        flipboxEl7.classList.remove("flipped");
+        flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.add("flipped");
+
+    }
+}
