@@ -35,7 +35,7 @@
 .aboutbit {
     text-decoration: underline;
     cursor: pointer;
-    font-style: italic;
+
 }
 
 .aboutbit:hover {
@@ -522,7 +522,7 @@ details>summary {
     margin-right: 1%;
     text-align: right;
     margin-top: -1.45rem;
-
+    text-decoration: underline;
 
 
 }
@@ -535,8 +535,10 @@ details>summary {
 
 
 .flippytextcont:hover {
-
+    background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
+
+
 }
 
 .flippytextB:hover {
