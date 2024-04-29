@@ -42,6 +42,7 @@ function Flip() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -68,6 +69,7 @@ function Flip1() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -94,7 +96,7 @@ function Flip2() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
-
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -121,6 +123,7 @@ function Flip3() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -146,7 +149,7 @@ function Flip4() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
-
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -172,7 +175,7 @@ function Flip5() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
-
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -198,7 +201,7 @@ function Flip6() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
-
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -225,7 +228,7 @@ function Flip7() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
-
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -252,7 +255,7 @@ function Flip8() {
         flipboxEl8.classList.add("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.remove("flipped");
-
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -278,7 +281,7 @@ function Flip9() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.add("flipped");
         flipboxEl10.classList.remove("flipped");
-
+        flipboxEl11.classList.remove("flipped");
     }
 }
 
@@ -304,6 +307,34 @@ function Flip10() {
         flipboxEl8.classList.remove("flipped");
         flipboxEl9.classList.remove("flipped");
         flipboxEl10.classList.add("flipped");
+        flipboxEl11.classList.remove("flipped");
+
+    }
+}
+
+const flipboxEl11 = document.querySelectorAll('.flip-box')[11];
+
+console.log(flipboxEl11);
+
+function Flip11() {
+
+    if (flipboxEl11.classList.contains("flipped")) {
+        flipboxEl11.classList.toggle("flipped");
+
+    }
+    else {
+        flipboxEl.classList.remove("flipped");
+        flipboxEl1.classList.remove("flipped");
+        flipboxEl2.classList.remove("flipped");
+        flipboxEl3.classList.remove("flipped");
+        flipboxEl4.classList.remove("flipped");
+        flipboxEl5.classList.remove("flipped");
+        flipboxEl6.classList.remove("flipped");
+        flipboxEl7.classList.remove("flipped");
+        flipboxEl8.classList.remove("flipped");
+        flipboxEl9.classList.remove("flipped");
+        flipboxEl10.classList.remove("flipped");
+        flipboxEl11.classList.add("flipped");
 
     }
 }
