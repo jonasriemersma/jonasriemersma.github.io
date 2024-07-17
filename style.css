@@ -1,12 +1,12 @@
 /* TEXT AND MEDIA TAGS*/
 
 @font-face {
-    font-family: "abc favorit edu";
+    font-family: "abc favorit edu book";
     src: url('assets/ABCFavoritEdu-Book.woff');
 }
 
 @font-face {
-    font-family: "abc favorit edu";
+    font-family: "abc favorit edu book";
     font-style: italic;
     src: url('assets/ABCFavoritEdu-BookItalic.woff');
 }
