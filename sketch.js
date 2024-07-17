@@ -1,211 +1,803 @@
-let x = 100;
-let y = 100;
-let xSpeed = 5;
-let ySpeed = 5;
+/* TEXT AND MEDIA TAGS*/
 
-let x1 = 200;
-let y1 = 200;
-let xSpeed1 = 5;
-let ySpeed1 = 5;
+@font-face {
+    font-family: "abc favorit edu";
+    src: url('assets/ABCFavoritEdu-Book.woff');
+}
 
-let x3 = 100;
-let y3 = 100;
-let xSpeed3 = 5;
-let ySpeed3 = 5;
+@font-face {
+    font-family: "abc favorit edu";
+    font-style: italic;
+    src: url('assets/ABCFavoritEdu-BookItalic.woff');
+}
 
-let x4 = 100;
-let y4 = 100;
-let xSpeed4 = 5;
-let ySpeed4 = 5;
-
-let x5 = 100;
-let y5 = 100;
-let xSpeed5 = 5;
-let ySpeed5 = 5;
-
-let x6 = 100;
-let y6 = 100;
-let xSpeed6 = 5;
-let ySpeed6 = 5;
-
-let x7 = 100;
-let y7 = 100;
-let xSpeed7 = 5;
-let ySpeed7 = 5;
-
-let fillA = 255;
-let fillB = 255;
-let fillC = 255;
-
-
-
-
-function setup() {
-let c = createCanvas((windowWidth/2)-30, 380);
-c.parent('pfiveone');
-
-var windy = windowWidth / 2;
-
-if ((windowWidth / windowHeight) < 1){
-  resizeCanvas(0,0);
-  noLoop();
+@font-face {
+    font-family: "bianzhidai";
+    src: url('assets/bianzhidai-Pearl.otf');
 }
 
 
-  
 
-  
+* {
+    font-family: "abc favorit edu book";
+    font-size: 1.12rem;
+    line-height: 125%;
+    font-weight: 400;
+    color: white;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 
-  xSpeed = random(-0.1,0.1);
-  ySpeed = random(-0.1,0.1);
-  xSpeed1 = random(-0.1,0.1);
-  ySpeed1 = random(-0.1,0.1);
-  xSpeed2 = random(-0.1,0.1);
-  ySpeed2 = random(-0.1,0.1);
-  xSpeed3 = random(-0.1,0.1);
-  ySpeed3 = random(-0.1,0.1);
-  xSpeed4 = random(-0.1,0.1);
-  ySpeed4 = random(-0.1,0.1);
-  xSpeed5 = random(-0.1,0.1);
-  ySpeed5 = random(-0.1,0.1);
-  xSpeed6 = random(-0.1,0.1);
-  ySpeed6 = random(-0.1,0.1);
-  xSpeed7 = random(-0.1,0.1);
-  ySpeed7 = random(-0.1,0.1);
-  
-  x1 = random(50,230);
-  y1 = random(50,150);
-  x2 = random(250,windy - 90);
-  y2 = random(130,250);
-  x3 = random(50,windy - 90);
-  y3 = random(50,300);
-  x4 = random(50,windy - 90);
-  y4 = random(50,300);
-  x5 = random(50,windy - 90);
-  y5 = random(50,300);
-  x6 = random(50,windy - 90);
-  y6 = random(50,300);
-  x7 = random(50,windy - 90);
-  y7 = random(50,300);
-  
+
 
 }
 
-function draw() {
-  
-  
-  background(0, 0, 0, 100);
 
-  noStroke();
-  fill(fillA, fillB, fillC);
-  textSize(24);
- 
-  textFont("happy times at the ikob new game plus edition")
-  text("Jonas", x1, y1);
-  text("Riemersma", x2, y2);
-  textSize(24);
+.aboutbit {
+    text-decoration: underline;
+    cursor: pointer;
 
-  
+}
 
-  text("", x3, y3);
-  text("", x4, y4);
-  text("", x5, y5);
-  text("", x6, y6);
-  text("", x7, y7);
-  
-
-  textAlign(CENTER);
+.aboutbit:hover {
+    background-color: rgb(195, 195, 195);
+}
 
 
+.aboutlink {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.aboutlink:hover {
+    background-color: rgb(195, 195, 195);
+}
+
+.headeronlydesktop {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    width: 100%;
+    text-align: center;
+    height: 1vw;
+    z-index: -2;
+}
+
+.desktopheadercontainer {
+    display: grid;
+    z-index: -2;
+    margin-left: -0%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin-right: 0%;
+    margin-top: 0%;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
 
 
-  x = x + xSpeed;
-  y = y + ySpeed;
+.headeronlymobile {
+    display: none;
+}
 
-  if (x > (windowWidth /2) - 130 || x < 101) {
-    xSpeed = -xSpeed;
-  }
+.mobileheadercontainer {
+    display: none;
+}
 
-  if (y > 350 || y < 30) {
-    ySpeed = -ySpeed;
-  }
-  
-  x1 = x1 + xSpeed1;
-  y1 = y1 + ySpeed1;
 
-  if (x1 > (windowWidth /2) - 130 || x1 < 101) {
-    xSpeed1 = -xSpeed1;
-  }
 
-  if (y1 > 350 || y1 < 30) {
-    ySpeed1 = -ySpeed1;
-  }
+h6 {
+    font-size: 8vw;
+    margin-top: 20px;
+    font-family: 'bianzhidai';
 
-    x2 = x2 + xSpeed2;
-  y2 = y2 + ySpeed2;
+}
 
-  if (x2 > (windowWidth /2) - 130 || x2 < 101) {
-    xSpeed2 = -xSpeed2;
-  }
+h4 {
+    font-size: 10vw;
 
-  if (y2 > 350 || y2 < 30) {
-    ySpeed2 = -ySpeed2;
-  }
-  
-  x3 = x3 + xSpeed3;
-  y3 = y3 + ySpeed3;
+    font-family: bianzhidai;
+}
 
-  if (x3 > (windowWidth /2) - 130 || x3 < 101) {
-    xSpeed3 = -xSpeed3;
-  }
+.endthing {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.6%;
+    margin-left: 0%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin-right: 0%;
+    margin-top: 0%;
 
-  if (y3 > 350 || y3 < 30) {
-    ySpeed3 = -ySpeed3;
-  }
+}
 
-    x4 = x4 + xSpeed4;
-  y4 = y4 + ySpeed4;
+.endthing1 {
+    text-align: left;
+}
 
-  if (x4 > (windowWidth /2) - 130 || x4 < 101) {
-    xSpeed4 = -xSpeed4;
-  }
+.endthing2 {
+    text-align: right;
+}
 
-  if (y4 > 350 || y4 < 30) {
-    ySpeed4 = -ySpeed4;
-  }
-  
-    x5 = x5 + xSpeed5;
-  y5 = y5 + ySpeed5;
+.containeverything {
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
 
-  if (x5 > (windowWidth /2) - 130 || x5 < 101) {
-    xSpeed5 = -xSpeed5;
-  }
+}
 
-  if (y5 > 350 || y5 < 30) {
-    ySpeed5 = -ySpeed5;
-  }
-  
-    x6 = x6 + xSpeed6;
-  y6 = y6 + ySpeed;
+.onlydesktop {
 
-  if (x6 > (windowWidth /2) - 130 || x6 < 101) {
-    xSpeed6 = -xSpeed6;
-  }
 
-  if (y6 > 350 || y6 < 30) {
-    ySpeed6 = -ySpeed6;
-  }
-  
-    x7 = x7 + xSpeed7;
-  y7 = y7 + ySpeed7;
+    position: relative;
+}
 
-  if (x7 > (windowWidth /2) - 130 || x7 < 101) {
-    xSpeed7 = -xSpeed7;
-  }
+.showonlydesktop {
+    display: block;
+}
 
-  if (y7 > 350 || y7 < 30) {
-    ySpeed7 = -ySpeed7;
-  }
+.showonlymobile {
+    display: none;
+}
 
+ul {
+    position: relative;
+    list-style: none;
+
+}
+
+li::before {
+    content: '\2192';
+    position: absolute;
+    left: 0;
+
+
+}
+
+
+
+.biglink {
+    font-size: 1.4rem;
+
+
+}
+
+.bottomspacer {
+    height: 25vh;
+    position: relative;
+}
+
+.firstnamemobile {
+    display: none;
+    position: fixed;
+
+}
+
+
+body {
+    margin: 0 auto;
+    background-color: black;
+
+}
+
+.divider {
+    height: 10px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: -10px;
+}
+
+
+em {
+    font-size: 0.95rem;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+.topspacer {
+    height: 65vh;
+}
+
+
+
+.topgradient {
+    height: 15vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+    position: relative;
+}
+
+h1 {
+    font-size: 1.35rem;
+    text-decoration: none;
+
+
+}
+
+
+
+i {
+
+    font-style: italic;
+}
+
+.caption {
+    font-size: 0.95rem;
+    font-style: italic;
+
+}
+
+video {
+    height: 80vh;
+}
+
+img {
+    width: 100%;
+}
+
+.othersideimglink {
+    margin: auto;
+    position: relative;
+    display: block;
+    width: 45%;
+}
+
+
+hr {
+    border: none;
+    border-top: 1px double black;
+
+    background-color: black;
+    overflow: visible;
+    text-align: center;
+    height: 1px;
+}
+
+
+
+
+/* LINK TAGS */
+
+a:link {
+    color: white;
+
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+    background-color: rgb(195, 195, 195);
+
+}
+
+
+/* FLICKITY IMAGE CAROUSEL*/
+
+.gallery {
+    background: black;
+    font-size: 18pt;
+    font-weight: 500;
+
+    margin-right: 0px;
+
+
+    position: relative;
+
+
+    /*
+    max-width: 98vw;
+    left: 50%;
+    margin-left: -50vw;
+    margin-bottom: 4px;
+*/
+}
+
+.gallery-cell {
+
+    height: 91.5vh;
+    margin-right: 10px;
+    width: 100%;
+    background: black;
+    counter-increment: gallery-cell;
+}
+
+.gallery-cell:before {
+    display: block;
+
+    content: counter(gallery-cell);
+    line-height: 0px;
+    font-size: 80px;
+    color: black;
+}
+
+.gallery-cell img {
+    object-fit: scale-down;
+    position: relative;
+
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-cell video {
+    object-fit: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 67.7%;
+}
+
+
+
+/* TEXT AND IMAGE GRID */
+
+.header {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-column-gap: 1.5%;
+    margin-left: 0%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
+    margin-right: 0%;
+    margin-top: 0%;
+    height: 80%;
+    width: 100%;
+    position: fixed;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details>summary {
+    list-style: none;
+}
+
+
+
+.therest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.therestimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+
+}
+
+.therestimg:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+.resttext {
+    position: relative;
+
+
+}
+
+/* IMAGE ZOOM */
+
+
+
+.img-zoom-lens {
+    position: absolute;
+
+    /*set the size of the lens:*/
+    width: 200px;
+    height: 200px;
+}
+
+.img-zoom-result {
+
+    /*set the size of the result div:*/
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FLIP BOX */
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: black;
+
+    position: relative;
+    /*   perspective: 90vh; */
+    overflow: hidden;
+    padding-bottom: 4vh;
+    margin-bottom: 6vh;
+
+
+}
+
+
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipped .flip-box-inner {
+    transform: rotateX(-180deg);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+}
+
+
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: relative;
+
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+
+}
+
+/* Style the front side */
+.flip-box-front {
+    background-color: black;
+
+    transform: rotateX(0deg);
+}
+
+/* Style the back side */
+.flip-box-back {
+
+    color: white;
+    transform: rotateX(-180deg);
+
+
+}
+
+.gridcontain {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    grid-column-gap: 10px;
+    height: 100vh;
+    width: 96%;
+
+    margin-bottom: -70px;
+
+    position: fixed;
+    z-index: 2;
+    margin-left: 2vw;
+    
+}
+
+
+.flippytextcont {
+    padding: 1rem;
+    padding-left: 2vw;
+
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    margin-bottom: 3.5vh;
+    text-align: left;
+
+
+
+
+}
+
+.flippytext {
+    position: relative;
+    display: block;
+    margin-right: 1%;
+    text-align: right;
+    margin-top: -1.45rem;
+    text-decoration: underline;
+
+
+}
+
+.flippytext:hover {
+    cursor: pointer;
+    
+
+}
+
+
+.flippytextcont:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+
+
+}
+
+.flippytextB:hover {
+    background-color: rgb(195, 195, 195);
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-aspect-ratio: 1/1) {
+
+    * {
+        font-size: 1.1rem;
+        hyphens: auto;
+    }
+
+    details summary::-webkit-details-marker {
+        display: none;
+    }
+
+    details>summary {
+        list-style: none;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+        text-decoration: none;
+        font-weight: 400;
+        hyphens: none;
+    }
+
+    .biglink {
+        font-size: 1.25rem;
+        line-height: 132%;
+    }
+
+
+
+    video {
+        width: 100%;
+    }
+
+    .gallery {
+        margin-right: 0px;
+        position: relative;
+        max-width: 100vw;
+    }
+
+    .gallery-cell {
+        max-height: 70vh;
+        width: 100vw;
+
+        counter-increment: gallery-cell;
+    }
+
+    .gridcontain {
+        display: grid;
+        grid-template-columns: 1fr 0px;
+        text-align: left;
+        grid-column-gap: 1.2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        margin-top: -1rem;
+
+
+        position: absolute;
+
+    }
+
+    .gallery-cell img {
+        object-fit: scale-down;
+        background-color: black;
+
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .flippytextcont {
+        padding: 1rem;
+        padding-left: 1rem;
+
+        z-index: 0;
+        position: relative;
+        margin-bottom: 3.5vh;
+
+
+    }
+
+    .header {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: relative;
+    }
+
+    .closer {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        position: relative;
+    }
+
+
+
+
+
+    .flippytext {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 0px;
+        text-decoration: underline;
+
+    }
+
+
+
+    .flippytextcont {
+        padding-bottom: 50px;
+        position: relative !important;
+
+    }
+
+    .flip-box {
+        padding-bottom: 0vh;
+        margin-bottom: 4vh;
+    }
+
+    .flipped .flip-box-inner {
+        transform: rotateX(-180deg);
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+
+
+    }
+
+    .therest {
+        display: grid;
+        grid-template-columns: 97.4%;
+        grid-column-gap: 1.6%;
+        margin-left: 1%;
+        margin-top: 8%;
+
+    }
+
+    .topspacer {
+        height: 0vh;
+    }
+
+
+
+    .pfiveone {
+        display: none;
+        position: relative;
+        overflow: hidden;
+        width: 0px;
+        height: 0px;
+
+    }
+
+    .flippytext {
+        display: none;
+    }
+
+    .firstnamemobile {
+        display: block;
+        z-index: 2;
+        position: relative;
+    }
+
+    .bottomspacer {
+        height: 0vh;
+        position: relative;
+    }
+
+    .topgradient {
+        display: none;
+    }
+
+    .onlydesktop {
+
+        text-align-last: left;
+        margin-left: 0em;
+        text-indent: 0em;
+    }
+
+    .showonlydesktop {
+        display: none;
+    }
+
+    .showonlymobile {
+        display: inline;
+    }
+
+    .containeverything {
+        width: 100%;
+    }
+
+    i {
+
+        font-style: italic;
+    }
+
+    .endthing {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1.6%;
+        margin-left: 0%;
+        padding-right: 1.5%;
+        margin-right: 0%;
+        margin-top: 0%;
+    }
+
+    .endthing1 {
+        text-align: center;
+    }
+
+    .endthing2 {
+        text-align: center;
+    }
+
+    .headeronlydesktop {
+        display: none;
+    }
+
+    .desktopheadercontainer {
+        display: none;
+    }
+
+
+    .headeronlymobile {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        text-align: left;
+        height: 1vw;
+
+    }
+
+    .mobileheadercontainer {
+        display: grid;
+
+        margin-left: 0%;
+        padding-right: 1.5%;
+        padding-left: 1.5%;
+        margin-right: 0%;
+        margin-top: 0%;
+
+        position: relative;
+    }
 
 }
