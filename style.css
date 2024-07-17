@@ -1,14 +1,14 @@
 /* TEXT AND MEDIA TAGS*/
 
 @font-face {
-    font-family: "happy times at the ikob new game plus edition";
-    src: url('assets/happy-times-NG_regular_master_web.ttf');
+    font-family: "abc favorit edu";
+    src: url('assets/ABCFavoritEdu-Book.woff');
 }
 
 @font-face {
-    font-family: "happy times at the ikob new game plus edition";
+    font-family: "abc favorit edu";
     font-style: italic;
-    src: url('assets/happy-times-NG_italic_master_web.ttf');
+    src: url('assets/ABCFavoritEdu-BookItalic.woff');
 }
 
 @font-face {
@@ -19,8 +19,8 @@
 
 
 * {
-    font-family: "happy times at the ikob new game plus edition";
-    font-size: 1.1rem;
+    font-family: "abc favorit edu book";
+    font-size: 1.12rem;
     line-height: 125%;
     font-weight: 400;
     color: white;
@@ -65,7 +65,7 @@
 .desktopheadercontainer {
     display: grid;
     z-index: -2;
-    margin-left: -0.7%;
+    margin-left: -0%;
     padding-right: 1.5%;
     padding-left: 1.5%;
     margin-right: 0%;
@@ -90,7 +90,8 @@
 h6 {
     font-size: 8vw;
     margin-top: 20px;
-    font-family: bianzhidai;
+    font-family: 'bianzhidai';
+
 }
 
 h4 {
@@ -228,6 +229,7 @@ i {
 .caption {
     font-size: 0.95rem;
     font-style: italic;
+
 }
 
 video {
