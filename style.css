@@ -20,7 +20,7 @@
 
 * {
     font-family: "abc favorit edu book";
-    font-size: 1.12rem;
+    font-size: 1.1rem;
     line-height: 125%;
     font-weight: 400;
     color: white;
@@ -33,7 +33,6 @@
 
 
 .aboutbit {
-    text-decoration: underline;
     cursor: pointer;
 
 }
@@ -145,16 +144,14 @@ h4 {
 
 ul {
     position: relative;
-    list-style: none;
-
+    left: -2.3rem;
+    list-style:none;
 }
 
 li::before {
-    content: '\2192';
+
     position: absolute;
-    left: 0;
-
-
+    left: 1rem;
 }
 
 
@@ -227,14 +224,11 @@ i {
 }
 
 .caption {
-    font-size: 0.95rem;
-    font-style: italic;
+    font-size: 0.9rem;
+
 
 }
 
-video {
-    height: 80vh;
-}
 
 img {
     width: 100%;
@@ -329,13 +323,13 @@ a:hover {
 }
 
 .gallery-cell video {
-    object-fit: cover;
+
     position: relative;
     top: 0;
     left: 0;
 
-    width: 100%;
-    height: 67.7%;
+    height: 100%;
+
 }
 
 
@@ -499,7 +493,7 @@ details>summary {
     position: fixed;
     z-index: 2;
     margin-left: 2vw;
-    
+
 }
 
 
@@ -512,6 +506,7 @@ details>summary {
     position: relative;
     margin-bottom: 3.5vh;
     text-align: left;
+    color: white;
 
 
 
@@ -524,14 +519,16 @@ details>summary {
     margin-right: 1%;
     text-align: right;
     margin-top: -1.45rem;
-    text-decoration: underline;
+    color: white;
+
 
 
 }
 
 .flippytext:hover {
     cursor: pointer;
-    
+
+
 
 }
 
@@ -539,6 +536,7 @@ details>summary {
 .flippytextcont:hover {
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
+
 
 
 }
@@ -590,7 +588,7 @@ details>summary {
     }
 
     .gallery-cell {
-        max-height: 70vh;
+        max-height: 60vh;
         width: 100vw;
 
         counter-increment: gallery-cell;
